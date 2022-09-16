@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<Locations >
+  <Project >
+    <file_marker column=" 1" line=" 20" >
+      <vfs_project>C:\Users\Martinsen\Documents\git-repos\RTS\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\Martinsen\Documents\git-repos\RTS\Project\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 17" line=" 10" >
+      <vfs_project>C:\Users\Martinsen\Documents\git-repos\RTS\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\Martinsen\Documents\git-repos\RTS\Project\src\carclass.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 25" line=" 61" >
+      <vfs_project />
+      <vfs_file>C:\Users\Martinsen\Documents\git-repos\Ada_Drivers_Library\boards\MicroBit_v2\microbit_v2_full.gpr</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 2" >
+      <vfs_project>C:\Users\Martinsen\Documents\git-repos\RTS\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\Martinsen\Documents\git-repos\RTS\Project\bil.gpr</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Martinsen\Documents\git-repos\Ada_Drivers_Library\boards\MicroBit_v2\microbit_v2_full.gpr</vfs_project>
+      <vfs_file>C:\Users\Martinsen\Documents\git-repos\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-iosfortasking.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 51" line=" 24" >
+      <vfs_project>C:\Users\Martinsen\Documents\git-repos\RTS\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\Martinsen\Documents\git-repos\RTS\Project\src\carclass.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 33" line=" 3" >
+      <vfs_project>C:\Users\Martinsen\Documents\git-repos\RTS\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\Martinsen\Documents\git-repos\RTS\Project\src\carclass.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 36" line=" 38" >
+      <vfs_project>C:\Users\Martinsen\Documents\git-repos\RTS\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\Martinsen\Documents\git-repos\RTS\Project\src\carclass.ads</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 26" line=" 18" >
+      <vfs_project>C:\Users\Martinsen\Documents\git-repos\RTS\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\Martinsen\Documents\git-repos\RTS\Project\src\carclass.adb</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>
