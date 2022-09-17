@@ -4,57 +4,60 @@ package body CarObject is
 
       procedure SetDirectionHelper(Pin1 : MicroBit.IOsForTasking.Pin_Id;
                                    Pin2 : MicroBit.IOsForTasking.Pin_Id;
-                                   Dir : Boolean) is
+                                   Dir : Direction) is
       begin
-         if Dir = True then
+         if Dir = Forwards then
             MicroBit.IOsForTasking.Set(Pin1,True);
             MicroBit.IOsForTasking.Set(Pin2,False);
-         else
+         elsif Dir = Backwards then
             MicroBit.IOsForTasking.Set(Pin1,False);
             MicroBit.IOsForTasking.Set(Pin2,True);
+         else
+            MicroBit.IOsForTasking.Set(Pin1,False);
+            MicroBit.IOsForTasking.Set(Pin2,False);
          end if;
       end SetDirectionHelper;
    
-      procedure SetDirectionLB(Dir : Boolean) is
+      procedure SetDirectionLB(Dir : Direction) is
       begin
          SetDirectionHelper(Dir1LB, Dir2LB, Dir);
          CurrentDirectionLB := Dir;
       end SetDirectionLB;
    
-      procedure SetDirectionRB( Dir : Boolean) is
+      procedure SetDirectionRB( Dir : Direction) is
       begin
          SetDirectionHelper(Dir1RB, Dir2RB, Dir);
          CurrentDirectionRB := Dir;
       end SetDirectionRB;
    
-      procedure SetDirectionLF(Dir : Boolean) is
+      procedure SetDirectionLF(Dir : Direction) is
       begin
          SetDirectionHelper(Dir1LF, Dir2LF, Dir);
          CurrentDirectionLF := Dir;
       end SetDirectionLF;
    
-      procedure SetDirectionRF(Dir : Boolean) is
+      procedure SetDirectionRF(Dir : Direction) is
       begin
          SetDirectionHelper(Dir1RF, Dir2RF, Dir);
          CurrentDirectionRF := Dir;
       end SetDirectionRF;
    
-      function GetDirectionLB return Boolean is
+      function GetDirectionLB return Direction is
       begin
          return CurrentDirectionLB;
       end GetDirectionLB;
    
-      function GetDirectionRB return Boolean is
+      function GetDirectionRB return Direction is
       begin
          return CurrentDirectionRB;
       end GetDirectionRB;
    
-      function GetDirectionLF return Boolean is
+      function GetDirectionLF return Direction is
       begin
          return CurrentDirectionLF;
       end GetDirectionLF;
    
-      function GetDirectionRF return Boolean is
+      function GetDirectionRF return Direction is
       begin
          return CurrentDirectionRF;
       end GetDirectionRF;

@@ -234,12 +234,12 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   D:\git-repos\rts-car\Project\obj\CarObject.o
-   --   D:\git-repos\rts-car\Project\obj\main.o
-   --   -LD:\git-repos\rts-car\Project\obj\
-   --   -LD:\git-repos\rts-car\Project\obj\
-   --   -LD:\git-repos\Ada_Drivers_Library\boards\MicroBit_v2\obj\full_lib_Debug\
-   --   -LD:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\adalib\
+   --   C:\Users\even1\Documents\git-repos\rts-car\Project\obj\CarObject.o
+   --   C:\Users\even1\Documents\git-repos\rts-car\Project\obj\main.o
+   --   -LC:\Users\even1\Documents\git-repos\rts-car\Project\obj\
+   --   -LC:\Users\even1\Documents\git-repos\rts-car\Project\obj\
+   --   -LC:\Users\even1\Documents\git-repos\Ada_Drivers_Library\boards\MicroBit_v2\obj\full_lib_Debug\
+   --   -LC:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\adalib\
    --   -static
    --   -lgnarl
    --   -lgnat

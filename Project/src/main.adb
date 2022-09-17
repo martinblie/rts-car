@@ -6,7 +6,7 @@ begin
   loop
 
 
-      Car.SetDirectionLB(False);
+      Car.SetDirectionLB(Stop);
       Car.SetSpeedLeft(150);
 
       MicroBit.IOsForTasking.Set(14,False);

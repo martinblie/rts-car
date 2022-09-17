@@ -4,19 +4,23 @@ with Microbit.TimeWithRTC1;
 
 package CarObject is
 
-   
+   type Direction is
+     (Forwards,
+      Backwards,
+      Stop);
+     
    protected Car is
       procedure SetDirectionHelper(Pin1 : MicroBit.IOsForTasking.Pin_Id;
                                 Pin2 : MicroBit.IOsForTasking.Pin_Id;
-                                   Dir : Boolean);
-      procedure SetDirectionLB(Dir : Boolean);
-      procedure SetDirectionRB(Dir : Boolean);
-      procedure SetDirectionLF(Dir : Boolean);
-      procedure SetDirectionRF(Dir : Boolean);
-      function GetDirectionLB return Boolean;
-      function GetDirectionRB return Boolean;
-      function GetDirectionLF return Boolean;
-      function GetDirectionRF return Boolean;
+                                   Dir : Direction);
+      procedure SetDirectionLB(Dir : Direction);
+      procedure SetDirectionRB(Dir : Direction);
+      procedure SetDirectionLF(Dir : Direction);
+      procedure SetDirectionRF(Dir : Direction);
+      function GetDirectionLB return Direction;
+      function GetDirectionRB return Direction;
+      function GetDirectionLF return Direction;
+      function GetDirectionRF return Direction;
    
       procedure SetSpeedLeft (Speed : MicroBit.IOsForTasking.Analog_Value);
       procedure SetSpeedRight(Speed : MicroBit.IOsForTasking.Analog_Value);
@@ -51,10 +55,10 @@ package CarObject is
       -- STATUS
       CurrentSpeedLeft : MicroBit.IOsForTasking.Analog_Value := 0;
       CurrentSpeedRight : MicroBit.IOsForTasking.Analog_Value := 0;
-      CurrentDirectionLB : Boolean := True;
-      CurrentDirectionRB : Boolean := True;
-      CurrentDirectionLF : Boolean := True;
-      CurrentDirectionRF : Boolean := True;
+      CurrentDirectionLB : direction := Stop;
+      CurrentDirectionRB : direction := Stop;
+      CurrentDirectionLF : direction := Stop;
+      CurrentDirectionRF : direction := Stop;
       --CurrentServoAngle : Positive range 0 .. 180 := 0;
       --ObstacleDistanceFront : Positive range 0 .. 200 := 100;
       --ObstacleDistanceRear : Positive range 0 .. 30 := 20;
