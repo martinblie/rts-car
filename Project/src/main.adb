@@ -1,26 +1,20 @@
-with CarClass; use CarClass;
+with CarObject; use CarObject;
+with MicroBit.IOsForTasking;
 
 procedure Main is
-myCar : Car;
 begin
-   myCar.PwmLeft := 1;
-   myCar.PwmRight := 2;
-   mycar.Dir1LB := 3;
-   myCar. Dir2LB := 4;
-   myCar.Dir1RB := 5;
-   myCar.Dir2RB := 6;
-   myCar.Dir1LF := 7;
-   myCar.Dir2LF := 8;
-   myCar.Dir1RF := 9;
-   myCar.Dir2RF := 10;
+  loop
 
-   myCar.SetDirectionLB(True);
-   myCar.SetSpeedLeft(200);
+
+      Car.SetDirectionLB(False);
+      Car.SetSpeedLeft(150);
+
+      MicroBit.IOsForTasking.Set(14,False);
+  end loop;
 
 
 
 
 
 
-   null;
 end Main;

@@ -14,11 +14,11 @@ project Bil is
       for Switches ("ada") use ("-g", "-O0");
    end Compiler;
 
-   Package Ide is
+   package Ide is
       for Program_Host use ":1234";
       for Communication_Protocol use "remote";
       for Connection_Tool use "pyocd";
-      end Ide;
+   end Ide;
 
 end Bil;
 
