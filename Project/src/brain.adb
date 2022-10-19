@@ -4,12 +4,13 @@ with MotorController; use MotorController;
 package body Brain is
    task body DistanceSensorFrontManager is
       CurrentDist : Integer;
-      PrevDist : Integer;
+      PrevDist : Integer := 0;
    begin
       loop
          CurrentDist := GetDistanceUltrasonic(Pins.Ultrasonic1Trigger, Pins.Ultrasonic1Echo);
-         if CurrentDist /= PrevDist then
+         if CurrentDist /= PrevDist and CurrentDist /= -1 then
             ObstacleDistanceFront.Set(CurrentDist);
+            PrevDist := CurrentDist;
          end if;
       end loop;
    end DistanceSensorFrontManager;

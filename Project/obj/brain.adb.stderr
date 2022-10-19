@@ -1,1 +1,0 @@
-brain.adb:7:07: warning: variable "PrevDist" is read but never assigned [-gnatwv]

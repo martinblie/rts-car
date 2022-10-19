@@ -12,6 +12,7 @@ A -march=armv7e-m+fp
 P DB LC TF  SS ZX
 
 RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
 RV NO_STANDARD_STORAGE_POOLS
 RV NO_TASKING
 RV NO_DEFAULT_INITIALIZATION
@@ -20,7 +21,7 @@ RV NO_ELABORATION_CODE
 RV MAX_TASKS=2
 RV MAX_ENTRY_QUEUE_LENGTH=1+
 
-U brain%b		brain.adb		238519ae OO PK
+U brain%b		brain.adb		d304110e OO PK
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 W carobject%s		carobject.adb		carobject.ali  AD
 W distancesensors%s	distancesensors.adb	distancesensors.ali  AD
@@ -50,7 +51,7 @@ D a-tags.ads		20220916121810 9eaa38c6 ada.tags%s
 D a-taside.ads		20220916121814 00e3a3f6 ada.task_identification%s
 D a-unccon.ads		20220916121808 0e9b276f ada.unchecked_conversion%s
 D brain.ads		20221019204058 4b4ea9b1 brain%s
-D brain.adb		20221019212056 ed69bad0 brain%b
+D brain.adb		20221019213408 1de8b270 brain%b
 D carobject.ads		20221019212036 993620ab carobject%s
 D cortex_m.ads		20220916121916 38b367df cortex_m%s
 D cortex_m-nvic.ads	20220916121916 72ffb636 cortex_m.nvic%s
@@ -133,27 +134,27 @@ G r c none [obstacleavoiderTK brain 4 9 none] [setdirectionall motorcontroller 1
 G r p none [obstacleavoiderTK brain 4 9 none] [get carobject__obstacledistancefront 71 16 none]
 G r c none [obstacleavoiderTK brain 4 9 none] [setdirection motorcontroller 5 14 none]
 X 13 brain.ads
-1K9*Brain 10l5 10e10 14|4b14 40l5 40t10
-3t9*DistanceSensorFrontManager 14|5b14 15l8 15t34
-4t9*ObstacleAvoider 14|17b14 34l11 34t26
+1K9*Brain 10l5 10e10 14|4b14 41l5 41t10
+3t9*DistanceSensorFrontManager 14|5b14 16l8 16t34
+4t9*ObstacleAvoider 14|18b14 35l11 35t26
 X 14 brain.adb
-6i7 CurrentDist{integer} 10m10 11r13 12r39
-7i7 PrevDist{integer} 11r28
-18b7 HasAvoided{boolean} 27m13 29r13
+6i7 CurrentDist{integer} 10m10 11r13 11r41 12r39 13r25
+7i7 PrevDist{integer} 11r28 13m13
+19b7 HasAvoided{boolean} 28m13 30r13
 X 15 carobject.ads
 5K9*CarObject 14|1w6 1r21 15|88e14
-8n5*Forward{7E9} 14|20r23 30r29
-8n14*Backward{7E9} 14|24r55 25r55
-16i7*Dir1RB{26|8I9} 14|24r34
-17i7*Dir2RB{26|8I9} 14|24r47
-20i7*Dir1RF{26|8I9} 14|25r34
-21i7*Dir2RF{26|8I9} 14|25r47
+8n5*Forward{7E9} 14|21r23 31r29
+8n14*Backward{7E9} 14|25r55 26r55
+16i7*Dir1RB{26|8I9} 14|25r34
+17i7*Dir2RB{26|8I9} 14|25r47
+20i7*Dir1RF{26|8I9} 14|26r34
+21i7*Dir2RF{26|8I9} 14|26r47
 22i7*Ultrasonic1Trigger{26|8I9} 14|10r52
 23i7*Ultrasonic1Echo{26|8I9} 14|10r77
-25r4*Pins{10R9} 14|10r47 10r72 24r29 24r42 25r29 25r42
-69w14*ObstacleDistanceFront 14|12r13 22r13 23r19
+25r4*Pins{10R9} 14|10r47 10r72 25r29 25r42 26r29 26r42
+69w14*ObstacleDistanceFront 14|12r13 23r13 24r19
 70U17 Set 14|12s35
-71V16 Get{integer} 14|22s35 23s41
+71V16 Get{integer} 14|23s35 24s41
 X 18 distancesensors.ads
 3K9*DistanceSensors 14|2w6 2r27 18|10e20
 5V13*GetDistanceUltrasonic{integer} 14|10s25
@@ -169,8 +170,8 @@ X 26 microbit-iosfortasking.ads
 8I9*Pin_Id<short_short_integer>
 X 28 motorcontroller.ads
 3K9*MotorController 14|3w6 3r27 28|12e20
-5U14*SetDirection 14|24s16 25s16
-10U14*SetDirectionAll 14|20s7 30s13
+5U14*SetDirection 14|25s16 26s16
+10U14*SetDirectionAll 14|21s7 31s13
 X 57 s-interr.ads
 97U14*Install_Restricted_Handlers_Sequential 98i<c,__gnat_attach_all_handlers>22
 X 65 s-secsta.ads
