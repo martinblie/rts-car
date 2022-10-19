@@ -175,8 +175,6 @@ package ada_main is
    --  system.assertions%b
    --  system.pool_global%s
    --  system.pool_global%b
-   --  system.relative_delays%s
-   --  system.relative_delays%b
    --  system.tasking.protected_objects%s
    --  system.tasking.protected_objects%b
    --  system.tasking.restricted%s
@@ -252,14 +250,18 @@ package ada_main is
    --  nrf.device%s
    --  nrf.device%b
    --  microbit%s
-   --  microbit.console%s
-   --  microbit.console%b
    --  microbit.iosfortasking%s
    --  microbit.iosfortasking%b
+   --  distancesensors%s
+   --  distancesensors%b
    --  microbit.timewithrtc1%s
    --  microbit.timewithrtc1%b
    --  carobject%s
    --  carobject%b
+   --  motorcontroller%s
+   --  motorcontroller%b
+   --  brain%s
+   --  brain%b
    --  main%b
    --  END ELABORATION ORDER
 

@@ -6,18 +6,18 @@ pragma Suppress (Overflow_Check);
 
 package body ada_main is
 
-   E105 : Short_Integer; pragma Import (Ada, E105, "ada__tags_E");
-   E096 : Short_Integer; pragma Import (Ada, E096, "ada__strings__text_buffers_E");
-   E094 : Short_Integer; pragma Import (Ada, E094, "system__bb__timing_events_E");
-   E022 : Short_Integer; pragma Import (Ada, E022, "ada__exceptions_E");
-   E047 : Short_Integer; pragma Import (Ada, E047, "system__soft_links_E");
-   E045 : Short_Integer; pragma Import (Ada, E045, "system__exception_table_E");
+   E061 : Short_Integer; pragma Import (Ada, E061, "ada__tags_E");
+   E005 : Short_Integer; pragma Import (Ada, E005, "ada__strings__text_buffers_E");
+   E059 : Short_Integer; pragma Import (Ada, E059, "system__bb__timing_events_E");
+   E012 : Short_Integer; pragma Import (Ada, E012, "ada__exceptions_E");
+   E098 : Short_Integer; pragma Import (Ada, E098, "system__soft_links_E");
+   E096 : Short_Integer; pragma Import (Ada, E096, "system__exception_table_E");
    E147 : Short_Integer; pragma Import (Ada, E147, "ada__streams_E");
    E154 : Short_Integer; pragma Import (Ada, E154, "system__finalization_root_E");
    E152 : Short_Integer; pragma Import (Ada, E152, "ada__finalization_E");
    E156 : Short_Integer; pragma Import (Ada, E156, "system__storage_pools_E");
    E151 : Short_Integer; pragma Import (Ada, E151, "system__finalization_masters_E");
-   E006 : Short_Integer; pragma Import (Ada, E006, "ada__real_time_E");
+   E233 : Short_Integer; pragma Import (Ada, E233, "ada__real_time_E");
    E158 : Short_Integer; pragma Import (Ada, E158, "system__pool_global_E");
    E126 : Short_Integer; pragma Import (Ada, E126, "system__tasking__protected_objects_E");
    E221 : Short_Integer; pragma Import (Ada, E221, "system__tasking__restricted__stages_E");
@@ -41,12 +41,14 @@ package body ada_main is
    E179 : Short_Integer; pragma Import (Ada, E179, "nrf__twi_E");
    E183 : Short_Integer; pragma Import (Ada, E183, "nrf__uart_E");
    E130 : Short_Integer; pragma Import (Ada, E130, "nrf__device_E");
-   E231 : Short_Integer; pragma Import (Ada, E231, "microbit__console_E");
    E187 : Short_Integer; pragma Import (Ada, E187, "microbit__iosfortasking_E");
+   E231 : Short_Integer; pragma Import (Ada, E231, "distancesensors_E");
    E226 : Short_Integer; pragma Import (Ada, E226, "microbit__timewithrtc1_E");
    E124 : Short_Integer; pragma Import (Ada, E124, "carobject_E");
+   E237 : Short_Integer; pragma Import (Ada, E237, "motorcontroller_E");
+   E122 : Short_Integer; pragma Import (Ada, E122, "brain_E");
 
-   Sec_Default_Sized_Stacks : array (1 .. 1) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
+   Sec_Default_Sized_Stacks : array (1 .. 3) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
 
    Local_Priority_Specific_Dispatching : constant String := "";
    Local_Interrupt_States : constant String := "";
@@ -133,23 +135,23 @@ package body ada_main is
 
       ada_main'Elab_Body;
       Default_Secondary_Stack_Size := System.Parameters.Runtime_Default_Sec_Stack_Size;
-      Binder_Sec_Stacks_Count := 1;
+      Binder_Sec_Stacks_Count := 3;
       Default_Sized_SS_Pool := Sec_Default_Sized_Stacks'Address;
 
       Runtime_Initialize (1);
 
       Ada.Strings.Text_Buffers'Elab_Spec;
-      E096 := E096 + 1;
+      E005 := E005 + 1;
       System.Bb.Timing_Events'Elab_Spec;
-      E094 := E094 + 1;
+      E059 := E059 + 1;
       Ada.Exceptions'Elab_Spec;
       System.Soft_Links'Elab_Spec;
       Ada.Tags'Elab_Body;
-      E105 := E105 + 1;
+      E061 := E061 + 1;
       System.Exception_Table'Elab_Body;
-      E045 := E045 + 1;
-      E047 := E047 + 1;
-      E022 := E022 + 1;
+      E096 := E096 + 1;
+      E098 := E098 + 1;
+      E012 := E012 + 1;
       Ada.Streams'Elab_Spec;
       E147 := E147 + 1;
       System.Finalization_Root'Elab_Spec;
@@ -162,7 +164,7 @@ package body ada_main is
       System.Finalization_Masters'Elab_Body;
       E151 := E151 + 1;
       Ada.Real_Time'Elab_Body;
-      E006 := E006 + 1;
+      E233 := E233 + 1;
       System.Pool_Global'Elab_Spec;
       E158 := E158 + 1;
       System.Tasking.Protected_Objects'Elab_Body;
@@ -205,16 +207,19 @@ package body ada_main is
       Nrf.Device'Elab_Spec;
       Nrf.Device'Elab_Body;
       E130 := E130 + 1;
-      Microbit.Console'Elab_Body;
-      E231 := E231 + 1;
       Microbit.Iosfortasking'Elab_Spec;
       Microbit.Iosfortasking'Elab_Body;
       E187 := E187 + 1;
+      E231 := E231 + 1;
       Microbit.Timewithrtc1'Elab_Spec;
       Microbit.Timewithrtc1'Elab_Body;
       E226 := E226 + 1;
       Carobject'Elab_Spec;
       E124 := E124 + 1;
+      E237 := E237 + 1;
+      Brain'Elab_Spec;
+      Brain'Elab_Body;
+      E122 := E122 + 1;
    end adainit;
 
    procedure Ada_Main_Program;
@@ -240,12 +245,15 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   C:\Users\Martinsen\Documents\git-repos\rts-car\Project\obj\CarObject.o
-   --   C:\Users\Martinsen\Documents\git-repos\rts-car\Project\obj\main.o
-   --   -LC:\Users\Martinsen\Documents\git-repos\rts-car\Project\obj\
-   --   -LC:\Users\Martinsen\Documents\git-repos\rts-car\Project\obj\
-   --   -LC:\Users\Martinsen\Documents\git-repos\Ada_Drivers_Library\boards\MicroBit_v2\obj\full_lib_Debug\
-   --   -LC:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\adalib\
+   --   D:\git-repos\rts-car\Project\obj\distancesensors.o
+   --   D:\git-repos\rts-car\Project\obj\CarObject.o
+   --   D:\git-repos\rts-car\Project\obj\motorcontroller.o
+   --   D:\git-repos\rts-car\Project\obj\brain.o
+   --   D:\git-repos\rts-car\Project\obj\main.o
+   --   -LD:\git-repos\rts-car\Project\obj\
+   --   -LD:\git-repos\rts-car\Project\obj\
+   --   -LD:\git-repos\Ada_Drivers_Library\boards\MicroBit_v2\obj\full_lib_Debug\
+   --   -LD:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\adalib\
    --   -static
    --   -lgnarl
    --   -lgnat
