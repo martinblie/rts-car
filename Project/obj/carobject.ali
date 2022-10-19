@@ -1,0 +1,227 @@
+V "GNAT Lib v2021"
+A -O0
+A -gnatA
+A --RTS=C:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\
+A -mlittle-endian
+A -mthumb
+A -mfloat-abi=hard
+A -mfpu=fpv4-sp-d16
+A -mcpu=cortex-m4
+A -g
+A -march=armv7e-m+fp
+P DB LC TF  SS ZX
+
+RN
+RV NO_PROTECTED_TYPES
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+
+U carobject%b		carobject.adb		0bdee941 NE OO PK
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+
+U carobject%s		carobject.ads		89e0c938 EE OO PF PK
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W microbit%s		microbit.ads		microbit.ali
+W microbit.iosfortasking%s  microbit-iosfortasking.adb  microbit-iosfortasking.ali
+W microbit.timewithrtc1%s  microbit-timewithrtc1.adb  microbit-timewithrtc1.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+
+D ada.ads		20220915114830 76789da1 ada%s
+D a-except.ads		20220915114830 946f3014 ada.exceptions%s
+D a-finali.ads		20220915114830 bf4f806b ada.finalization%s
+D a-interr.ads		20220915114832 bdf68b51 ada.interrupts%s
+D a-intnam.ads		20220915114832 543e27b6 ada.interrupts.names%s
+D a-stream.ads		20220915114830 119b8fb3 ada.streams%s
+D a-string.ads		20220915114830 90ac6797 ada.strings%s
+D a-sttebu.ads		20220915114830 18209c64 ada.strings.text_buffers%s
+D a-stuten.ads		20220915114830 808c40ad ada.strings.utf_encoding%s
+D a-tags.ads		20220915114830 9eaa38c6 ada.tags%s
+D a-taside.ads		20220915114832 00e3a3f6 ada.task_identification%s
+D a-unccon.ads		20220915114830 0e9b276f ada.unchecked_conversion%s
+D carobject.ads		20220929115036 8d782ea1 carobject%s
+D carobject.adb		20220929105016 86a6c7e0 carobject%b
+D hal.ads		20220915115334 2b42c80e hal%s
+D hal-gpio.ads		20220915115334 7f0c2ffe hal.gpio%s
+D hal-i2c.ads		20220915115334 0ed73138 hal.i2c%s
+D hal-spi.ads		20220915115334 fe139819 hal.spi%s
+D hal-uart.ads		20220915115334 d58316b4 hal.uart%s
+D interfac.ads		20220915114830 edec285f interfaces%s
+D microbit.ads		20220915115332 3b54a3e8 microbit%s
+D microbit-iosfortasking.ads  20220915115332 60e097d3 microbit.iosfortasking%s
+D microbit-timewithrtc1.ads  20220915115332 6478704a microbit.timewithrtc1%s
+D nrf.ads		20220915115332 74cf72f5 nrf%s
+D nrf-device.ads	20220915115332 9c9916c4 nrf.device%s
+D nrf-gpio.ads		20220915115332 ab6d4598 nrf.gpio%s
+D nrf-rtc.ads		20220915115332 36d88130 nrf.rtc%s
+D nrf-spi_master.ads	20220915115332 a8ff49a3 nrf.spi_master%s
+D nrf-timers.ads	20220915115332 385f1a57 nrf.timers%s
+D nrf-twi.ads		20220915115332 4881713f nrf.twi%s
+D nrf-uart.ads		20220915115332 9fa4b8b9 nrf.uart%s
+D nrf_svd.ads		20220915115332 87ba21d7 nrf_svd%s
+D nrf_svd-rtc.ads	20220915115332 57c7ffc8 nrf_svd.rtc%s
+D nrf_svd-spi.ads	20220915115332 6e2ffb69 nrf_svd.spi%s
+D nrf_svd-timer.ads	20220915115332 ba50db1c nrf_svd.timer%s
+D nrf_svd-twi.ads	20220915115332 68301534 nrf_svd.twi%s
+D nrf_svd-uart.ads	20220915115332 83bcebc8 nrf_svd.uart%s
+D system.ads		20220915114832 ad54c63c system%s
+D s-bb.ads		20220915114830 09e072ae system.bb%s
+D s-bbbopa.ads		20220915114832 f68efaf0 system.bb.board_parameters%s
+D s-bbbosu.ads		20220915114832 0f820a2a system.bb.board_support%s
+D s-bbcppr.ads		20220915114832 ac5bcd4d system.bb.cpu_primitives%s
+D s-bbinte.ads		20220915114832 c88d39da system.bb.interrupts%s
+D s-bbmcpa.ads		20220915114832 9339744a system.bb.mcu_parameters%s
+D s-bbpara.ads		20220915114832 63167d1e system.bb.parameters%s
+D s-bbthre.ads		20220915114832 c94b446f system.bb.threads%s
+D s-bbthqu.ads		20220915114832 cd23d79e system.bb.threads.queues%s
+D s-bbtime.ads		20220915114832 ad086247 system.bb.time%s
+D s-finmas.ads		20220915114832 1ab4dba8 system.finalization_masters%s
+D s-finroo.ads		20220915114832 4ff27390 system.finalization_root%s
+D s-interr.ads		20220915114832 d74bd991 system.interrupts%s
+D s-multip.ads		20220915114832 f33e0e35 system.multiprocessors%s
+D s-mufalo.ads		20220915114832 3dca0374 system.multiprocessors.fair_locks%s
+D s-musplo.ads		20220915114832 69fa25c4 system.multiprocessors.spin_locks%s
+D s-osinte.ads		20220915114832 229b14dd system.os_interface%s
+D s-parame.ads		20220915114832 8e90778f system.parameters%s
+D s-pooglo.ads		20220915114832 ede33ef8 system.pool_global%s
+D s-putima.ads		20220915114832 4e095881 system.put_images%s
+D s-secsta.ads		20220915114830 56a2861c system.secondary_stack%s
+D s-stalib.ads		20220915114832 472fbca8 system.standard_library%s
+D s-stoele.ads		20220915114830 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20220915114830 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20220915114832 e9fa2dd8 system.storage_pools%s
+D s-stratt.ads		20220915114830 7bdda3fa system.stream_attributes%s
+D s-tasinf.ads		20220915114832 801abd01 system.task_info%s
+D s-taspri.ads		20220915114832 37f162b4 system.task_primitives%s
+D s-taskin.ads		20220915114832 989d56fd system.tasking%s
+D s-taprob.ads		20220915114832 c8fc0753 system.tasking.protected_objects%s
+D s-traent.ads		20220915114832 26a8d361 system.traceback_entries%s
+D s-unstyp.ads		20220915114830 2b077493 system.unsigned_types%s
+D unchconv.ads		20220915114830 ca2f9e18 unchecked_conversion%s
+G a e
+G c Z s b [setdirectionhelper carobject__car 9 17 none]
+G c Z s b [setdirectionlb carobject__car 12 17 none]
+G c Z s b [setdirectionrb carobject__car 13 17 none]
+G c Z s b [setdirectionlf carobject__car 14 17 none]
+G c Z s b [setdirectionrf carobject__car 15 17 none]
+G c Z s b [getdirectionlb carobject__car 16 16 none]
+G c Z s b [getdirectionrb carobject__car 17 16 none]
+G c Z s b [getdirectionlf carobject__car 18 16 none]
+G c Z s b [getdirectionrf carobject__car 19 16 none]
+G c Z s b [setspeedleft carobject__car 21 17 none]
+G c Z s b [setspeedright carobject__car 22 17 none]
+G c Z s b [getspeedleft carobject__car 23 16 none]
+G c Z s b [getspeedright carobject__car 24 16 none]
+G c Z s b [car__setdirectionhelperN carobject 9 7 none]
+G c Z s b [car__setdirectionhelperP carobject 9 7 none]
+G c Z s b [car__setdirectionlbN carobject 12 7 none]
+G c Z s b [car__setdirectionlbP carobject 12 7 none]
+G c Z s b [car__setdirectionrbN carobject 13 7 none]
+G c Z s b [car__setdirectionrbP carobject 13 7 none]
+G c Z s b [car__setdirectionlfN carobject 14 7 none]
+G c Z s b [car__setdirectionlfP carobject 14 7 none]
+G c Z s b [car__setdirectionrfN carobject 15 7 none]
+G c Z s b [car__setdirectionrfP carobject 15 7 none]
+G c Z s b [car__getdirectionlbN carobject 16 7 none]
+G c Z s b [car__getdirectionlbP carobject 16 7 none]
+G c Z s b [car__getdirectionrbN carobject 17 7 none]
+G c Z s b [car__getdirectionrbP carobject 17 7 none]
+G c Z s b [car__getdirectionlfN carobject 18 7 none]
+G c Z s b [car__getdirectionlfP carobject 18 7 none]
+G c Z s b [car__getdirectionrfN carobject 19 7 none]
+G c Z s b [car__getdirectionrfP carobject 19 7 none]
+G c Z s b [car__setspeedleftN carobject 21 7 none]
+G c Z s b [car__setspeedleftP carobject 21 7 none]
+G c Z s b [car__setspeedrightN carobject 22 7 none]
+G c Z s b [car__setspeedrightP carobject 22 7 none]
+G c Z s b [car__getspeedleftN carobject 23 7 none]
+G c Z s b [car__getspeedleftP carobject 23 7 none]
+G c Z s b [car__getspeedrightN carobject 24 7 none]
+G c Z s b [car__getspeedrightP carobject 24 7 none]
+G c Z s s [carTVIP carobject 8 4 none]
+G r c none [setdirectionhelper carobject__car 9 17 none] [set microbit__iosfortasking 22 14 none]
+G r c none [setdirectionlb carobject__car 12 17 none] [set microbit__iosfortasking 22 14 none]
+G r c none [setdirectionrb carobject__car 13 17 none] [set microbit__iosfortasking 22 14 none]
+G r c none [setdirectionlf carobject__car 14 17 none] [set microbit__iosfortasking 22 14 none]
+G r c none [setdirectionrf carobject__car 15 17 none] [set microbit__iosfortasking 22 14 none]
+G r c none [setspeedleft carobject__car 21 17 none] [write microbit__iosfortasking 34 14 none]
+G r c none [setspeedright carobject__car 22 17 none] [write microbit__iosfortasking 34 14 none]
+X 13 carobject.ads
+5K9*CarObject 74l5 74e14 14|1b14 95l5 95t14
+8w14*Car 14|2b19 84l8 84t11
+9U17 SetDirectionHelper 9>36 10>33 11>36 14|5b17 16l11 16t29 20s10 26s10
+. 32s10 38s10
+9i36 Pin1{22|7I9} 14|5b36 10r40 13r40
+10i33 Pin2{22|7I9} 14|6b36 11r40 14r40
+11b36 Dir{boolean} 14|7b36 9r13
+12U17 SetDirectionLB 12>32 14|18b17 22l11 22t25
+12b32 Dir{boolean} 14|18b32 20r45 21r32
+13U17 SetDirectionRB 13>32 14|24b17 28l11 28t25
+13b32 Dir{boolean} 14|24b33 26r45 27r32
+14U17 SetDirectionLF 14>32 14|30b17 34l11 34t25
+14b32 Dir{boolean} 14|30b32 32r45 33r32
+15U17 SetDirectionRF 15>32 14|36b17 40l11 40t25
+15b32 Dir{boolean} 14|36b32 38r45 39r32
+16V16 GetDirectionLB{boolean} 14|42b16 45l11 45t25
+17V16 GetDirectionRB{boolean} 14|47b16 50l11 50t25
+18V16 GetDirectionLF{boolean} 14|52b16 55l11 55t25
+19V16 GetDirectionRF{boolean} 14|57b16 60l11 60t25
+21U17 SetSpeedLeft 21>31 14|63b17 67l11 67t23
+21i31 Speed{22|28I9} 14|63b30 65r48 66r30
+22U17 SetSpeedRight 22>31 14|69b17 73l11 73t24
+22i31 Speed{22|28I9} 14|69b31 71r49 72r31
+23V16 GetSpeedLeft{22|28I9} 14|75b16 78l11 78t23
+24V16 GetSpeedRight{22|28I9} 14|80b16 83l11 83t24
+36i7 PwmLeft{22|7I9} 14|65r39
+37i7 PwmRight{22|7I9} 14|71r39
+38i7 PwmServo{22|7I9}
+39i7 Dir1LB{22|7I9} 14|20r29
+40i7 Dir2LB{22|7I9} 14|20r37
+41i7 Dir1RB{22|7I9} 14|26r29
+42i7 Dir2RB{22|7I9} 14|26r37
+43i7 Dir1LF{22|7I9} 14|32r29
+44i7 Dir2LF{22|7I9} 14|32r37
+45i7 Dir1RF{22|7I9} 14|38r29
+46i7 Dir2RF{22|7I9} 14|38r37
+52i7 CurrentSpeedLeft{22|28I9} 14|66r10 77r17
+53i7 CurrentSpeedRight{22|28I9} 14|72r10 82r17
+54b7 CurrentDirectionLB{boolean} 14|21r10 44r17
+55b7 CurrentDirectionRB{boolean} 14|27r10 49r17
+56b7 CurrentDirectionLF{boolean} 14|33r10 54r17
+57b7 CurrentDirectionRF{boolean} 14|39r10 59r17
+63i7 AccelerationX{integer}
+64i7 AccelerationY{integer}
+65i7 AccelerationZ{integer}
+X 16 hal-gpio.ads
+47h9*GPIO_Point
+X 17 hal-i2c.ads
+48h9*I2C_Port
+X 18 hal-spi.ads
+48h9*SPI_Port
+X 19 hal-uart.ads
+48h9*UART_Port
+X 21 microbit.ads
+58K9*MicroBit 13|1r6 2r6 9r43 10r40 21r39 22r39 23r36 24r37 36r17 37r18 38r18
+. 39r16 40r16 41r16 42r16 43r16 44r16 45r16 46r16 52r26 53r27 14|5r43 6r43
+. 10r13 11r13 13r13 14r13 63r38 65r10 69r39 71r10 75r36 80r37 21|112e13
+X 22 microbit-iosfortasking.ads
+5K18*IOsForTasking 13|1w15 9r52 10r49 21r48 22r48 23r45 24r46 36r26 37r27
+. 38r27 39r25 40r25 41r25 42r25 43r25 44r25 45r25 46r25 52r35 53r36 14|5r52
+. 6r52 10r22 11r22 13r22 14r22 63r47 65r19 69r48 71r19 75r45 80r46 22|91e27
+7I9*Pin_Id<short_short_integer> 13|9r66 10r63 36r40 37r41 38r41 39r39 40r39
+. 41r39 42r39 43r39 44r39 45r39 46r39 14|5r66 6r66
+22U14*Set 14|10s36 11s36 13s36 14s36
+28I9*Analog_Value<short_integer> 13|21r62 22r62 23r59 24r60 52r49 53r50 14|63r61
+. 69r62 75r59 80r60
+34U14*Write 14|65s33 71s33
+X 23 microbit-timewithrtc1.ads
+5K18*TimeWithRTC1 13|2w15 23|64e26
+X 51 s-interr.ads
+97U14*Install_Restricted_Handlers_Sequential 98i<c,__gnat_attach_all_handlers>22
+X 59 s-secsta.ads
+46P9*SS_Stack_Ptr(43R9)
+X 67 s-taskin.ads
+398V13*Get_Sec_Stack{59|46P9} 399i<c,__gnat_get_secondary_stack>22
+
