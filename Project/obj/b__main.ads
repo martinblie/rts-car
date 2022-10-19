@@ -167,10 +167,16 @@ package ada_main is
    --  system.stream_attributes.xdr%s
    --  system.stream_attributes.xdr%b
    --  system.stream_attributes%b
+   --  ada.real_time%s
+   --  ada.real_time%b
+   --  ada.real_time.delays%s
+   --  ada.real_time.delays%b
    --  system.assertions%s
    --  system.assertions%b
    --  system.pool_global%s
    --  system.pool_global%b
+   --  system.relative_delays%s
+   --  system.relative_delays%b
    --  system.tasking.protected_objects%s
    --  system.tasking.protected_objects%b
    --  system.tasking.restricted%s
@@ -246,6 +252,8 @@ package ada_main is
    --  nrf.device%s
    --  nrf.device%b
    --  microbit%s
+   --  microbit.console%s
+   --  microbit.console%b
    --  microbit.iosfortasking%s
    --  microbit.iosfortasking%b
    --  microbit.timewithrtc1%s

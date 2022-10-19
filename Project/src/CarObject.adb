@@ -1,5 +1,75 @@
 package body CarObject is
-   protected body Car is
+   
+   
+   
+   
+   
+   
+   protected body DirectionLB is
+      procedure Set(Dir : Dir) is
+      begin
+         CurrentDirectionLB = Dir;
+      end Set;
+      function Get return Dir is
+         return CurrentDirectionLB;
+      end Get;
+   end DirectionLB;
+   
+   protected body DirectionRB is
+      procedure Set(Dir : Dir) is
+      begin
+         CurrentDirectionRB = Dir;
+      end Set;
+      function Get return Dir is
+         return CurrentDirectionRB;
+      end Get;
+   end DirectionRB;
+   
+   protected body DirectionLF is
+      procedure Set(Dir : Dir) is
+      begin
+         CurrentDirectionLF = Dir;
+      end Set;
+      function Get return Dir is
+         return CurrentDirectionLF;
+      end Get;
+   end DirectionLF;
+   
+   protected body DirectionRF is
+      procedure Set(Dir : Dir) is
+      begin
+         CurrentDirectionRF = Dir;
+      end Set;
+      function Get return Dir is
+         return CurrentDirectionRF;
+      end Get;
+   end DirectionRF;
+   
+   protected body SpeedLeft is
+      procedure Set(Speed : MicroBit.IOsForTasking.Analog_Value) is
+      begin
+         CurrentSpeedLeft = Speed;
+      end Set;
+      function Get return MicroBit.IOsForTasking.Analog_Value is
+      begin
+         return Speed;
+      end Get;
+   end SpeedLeft;
+   
+      
+   protected body SpeedRight is
+      procedure Set(Speed : MicroBit.IOsForTasking.Analog_Value) is
+      begin
+         CurrentSpeedRight = Speed;
+      end Set;
+      function Get return MicroBit.IOsForTasking.Analog_Value is
+      begin
+         return Speed;
+      end Get;
+   end SpeedRight;
+   
+      
+   
       
 
       procedure SetDirectionHelper(Pin1 : MicroBit.IOsForTasking.Pin_Id;

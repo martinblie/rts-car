@@ -1,7 +1,7 @@
 V "GNAT Lib v2021"
 A -O0
 A -gnatA
-A --RTS=D:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\
+A --RTS=C:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\
 A -mlittle-endian
 A -mthumb
 A -mfloat-abi=hard
@@ -17,11 +17,11 @@ RV NO_DEFAULT_INITIALIZATION
 RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
 
-U carobject%b		carobject.adb		832f1ea5 NE OO PK
+U carobject%b		carobject.adb		0bdee941 NE OO PK
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
 
-U carobject%s		carobject.ads		01113edc EE OO PF PK
+U carobject%s		carobject.ads		89e0c938 EE OO PF PK
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 W microbit%s		microbit.ads		microbit.ali
 W microbit.iosfortasking%s  microbit-iosfortasking.adb  microbit-iosfortasking.ali
@@ -29,77 +29,77 @@ W microbit.timewithrtc1%s  microbit-timewithrtc1.adb  microbit-timewithrtc1.ali
 Z system.tasking%s	s-taskin.adb		s-taskin.ali
 Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
 
-D ada.ads		20220916121808 76789da1 ada%s
-D a-except.ads		20220916121810 946f3014 ada.exceptions%s
-D a-finali.ads		20220916121810 bf4f806b ada.finalization%s
-D a-interr.ads		20220916121814 bdf68b51 ada.interrupts%s
-D a-intnam.ads		20220916121814 543e27b6 ada.interrupts.names%s
-D a-stream.ads		20220916121810 119b8fb3 ada.streams%s
-D a-string.ads		20220916121810 90ac6797 ada.strings%s
-D a-sttebu.ads		20220916121810 18209c64 ada.strings.text_buffers%s
-D a-stuten.ads		20220916121810 808c40ad ada.strings.utf_encoding%s
-D a-tags.ads		20220916121810 9eaa38c6 ada.tags%s
-D a-taside.ads		20220916121814 00e3a3f6 ada.task_identification%s
-D a-unccon.ads		20220916121808 0e9b276f ada.unchecked_conversion%s
-D carobject.ads		20220916204826 0589d945 carobject%s
-D carobject.adb		20220916204824 86a6c7e0 carobject%b
-D hal.ads		20220916121916 2b42c80e hal%s
-D hal-gpio.ads		20220916121916 7f0c2ffe hal.gpio%s
-D hal-i2c.ads		20220916121916 0ed73138 hal.i2c%s
-D hal-spi.ads		20220916121916 fe139819 hal.spi%s
-D hal-uart.ads		20220916121916 d58316b4 hal.uart%s
-D interfac.ads		20220916121808 edec285f interfaces%s
-D microbit.ads		20220916121916 3b54a3e8 microbit%s
-D microbit-iosfortasking.ads  20220916121916 60e097d3 microbit.iosfortasking%s
-D microbit-timewithrtc1.ads  20220916121916 6478704a microbit.timewithrtc1%s
-D nrf.ads		20220916121916 74cf72f5 nrf%s
-D nrf-device.ads	20220916121916 9c9916c4 nrf.device%s
-D nrf-gpio.ads		20220916121916 ab6d4598 nrf.gpio%s
-D nrf-rtc.ads		20220916121916 36d88130 nrf.rtc%s
-D nrf-spi_master.ads	20220916121916 a8ff49a3 nrf.spi_master%s
-D nrf-timers.ads	20220916121916 385f1a57 nrf.timers%s
-D nrf-twi.ads		20220916121916 4881713f nrf.twi%s
-D nrf-uart.ads		20220916121916 9fa4b8b9 nrf.uart%s
-D nrf_svd.ads		20220916121916 87ba21d7 nrf_svd%s
-D nrf_svd-rtc.ads	20220916121916 57c7ffc8 nrf_svd.rtc%s
-D nrf_svd-spi.ads	20220916121916 6e2ffb69 nrf_svd.spi%s
-D nrf_svd-timer.ads	20220916121916 ba50db1c nrf_svd.timer%s
-D nrf_svd-twi.ads	20220916121916 68301534 nrf_svd.twi%s
-D nrf_svd-uart.ads	20220916121916 83bcebc8 nrf_svd.uart%s
-D system.ads		20220916121814 ad54c63c system%s
-D s-bb.ads		20220916121808 09e072ae system.bb%s
-D s-bbbopa.ads		20220916121814 f68efaf0 system.bb.board_parameters%s
-D s-bbbosu.ads		20220916121814 0f820a2a system.bb.board_support%s
-D s-bbcppr.ads		20220916121814 ac5bcd4d system.bb.cpu_primitives%s
-D s-bbinte.ads		20220916121814 c88d39da system.bb.interrupts%s
-D s-bbmcpa.ads		20220916121814 9339744a system.bb.mcu_parameters%s
-D s-bbpara.ads		20220916121814 63167d1e system.bb.parameters%s
-D s-bbthre.ads		20220916121814 c94b446f system.bb.threads%s
-D s-bbthqu.ads		20220916121814 cd23d79e system.bb.threads.queues%s
-D s-bbtime.ads		20220916121814 ad086247 system.bb.time%s
-D s-finmas.ads		20220916121812 1ab4dba8 system.finalization_masters%s
-D s-finroo.ads		20220916121812 4ff27390 system.finalization_root%s
-D s-interr.ads		20220916121814 d74bd991 system.interrupts%s
-D s-multip.ads		20220916121814 f33e0e35 system.multiprocessors%s
-D s-mufalo.ads		20220916121814 3dca0374 system.multiprocessors.fair_locks%s
-D s-musplo.ads		20220916121814 69fa25c4 system.multiprocessors.spin_locks%s
-D s-osinte.ads		20220916121814 229b14dd system.os_interface%s
-D s-parame.ads		20220916121814 8e90778f system.parameters%s
-D s-pooglo.ads		20220916121812 ede33ef8 system.pool_global%s
-D s-putima.ads		20220916121812 4e095881 system.put_images%s
-D s-secsta.ads		20220916121808 56a2861c system.secondary_stack%s
-D s-stalib.ads		20220916121812 472fbca8 system.standard_library%s
-D s-stoele.ads		20220916121808 2dc34a04 system.storage_elements%s
-D s-stoele.adb		20220916121808 ed88f8fb system.storage_elements%b
-D s-stopoo.ads		20220916121812 e9fa2dd8 system.storage_pools%s
-D s-stratt.ads		20220916121810 7bdda3fa system.stream_attributes%s
-D s-tasinf.ads		20220916121814 801abd01 system.task_info%s
-D s-taspri.ads		20220916121814 37f162b4 system.task_primitives%s
-D s-taskin.ads		20220916121814 989d56fd system.tasking%s
-D s-taprob.ads		20220916121814 c8fc0753 system.tasking.protected_objects%s
-D s-traent.ads		20220916121812 26a8d361 system.traceback_entries%s
-D s-unstyp.ads		20220916121808 2b077493 system.unsigned_types%s
-D unchconv.ads		20220916121808 ca2f9e18 unchecked_conversion%s
+D ada.ads		20220915114830 76789da1 ada%s
+D a-except.ads		20220915114830 946f3014 ada.exceptions%s
+D a-finali.ads		20220915114830 bf4f806b ada.finalization%s
+D a-interr.ads		20220915114832 bdf68b51 ada.interrupts%s
+D a-intnam.ads		20220915114832 543e27b6 ada.interrupts.names%s
+D a-stream.ads		20220915114830 119b8fb3 ada.streams%s
+D a-string.ads		20220915114830 90ac6797 ada.strings%s
+D a-sttebu.ads		20220915114830 18209c64 ada.strings.text_buffers%s
+D a-stuten.ads		20220915114830 808c40ad ada.strings.utf_encoding%s
+D a-tags.ads		20220915114830 9eaa38c6 ada.tags%s
+D a-taside.ads		20220915114832 00e3a3f6 ada.task_identification%s
+D a-unccon.ads		20220915114830 0e9b276f ada.unchecked_conversion%s
+D carobject.ads		20220929115036 8d782ea1 carobject%s
+D carobject.adb		20220929105016 86a6c7e0 carobject%b
+D hal.ads		20220915115334 2b42c80e hal%s
+D hal-gpio.ads		20220915115334 7f0c2ffe hal.gpio%s
+D hal-i2c.ads		20220915115334 0ed73138 hal.i2c%s
+D hal-spi.ads		20220915115334 fe139819 hal.spi%s
+D hal-uart.ads		20220915115334 d58316b4 hal.uart%s
+D interfac.ads		20220915114830 edec285f interfaces%s
+D microbit.ads		20220915115332 3b54a3e8 microbit%s
+D microbit-iosfortasking.ads  20220915115332 60e097d3 microbit.iosfortasking%s
+D microbit-timewithrtc1.ads  20220915115332 6478704a microbit.timewithrtc1%s
+D nrf.ads		20220915115332 74cf72f5 nrf%s
+D nrf-device.ads	20220915115332 9c9916c4 nrf.device%s
+D nrf-gpio.ads		20220915115332 ab6d4598 nrf.gpio%s
+D nrf-rtc.ads		20220915115332 36d88130 nrf.rtc%s
+D nrf-spi_master.ads	20220915115332 a8ff49a3 nrf.spi_master%s
+D nrf-timers.ads	20220915115332 385f1a57 nrf.timers%s
+D nrf-twi.ads		20220915115332 4881713f nrf.twi%s
+D nrf-uart.ads		20220915115332 9fa4b8b9 nrf.uart%s
+D nrf_svd.ads		20220915115332 87ba21d7 nrf_svd%s
+D nrf_svd-rtc.ads	20220915115332 57c7ffc8 nrf_svd.rtc%s
+D nrf_svd-spi.ads	20220915115332 6e2ffb69 nrf_svd.spi%s
+D nrf_svd-timer.ads	20220915115332 ba50db1c nrf_svd.timer%s
+D nrf_svd-twi.ads	20220915115332 68301534 nrf_svd.twi%s
+D nrf_svd-uart.ads	20220915115332 83bcebc8 nrf_svd.uart%s
+D system.ads		20220915114832 ad54c63c system%s
+D s-bb.ads		20220915114830 09e072ae system.bb%s
+D s-bbbopa.ads		20220915114832 f68efaf0 system.bb.board_parameters%s
+D s-bbbosu.ads		20220915114832 0f820a2a system.bb.board_support%s
+D s-bbcppr.ads		20220915114832 ac5bcd4d system.bb.cpu_primitives%s
+D s-bbinte.ads		20220915114832 c88d39da system.bb.interrupts%s
+D s-bbmcpa.ads		20220915114832 9339744a system.bb.mcu_parameters%s
+D s-bbpara.ads		20220915114832 63167d1e system.bb.parameters%s
+D s-bbthre.ads		20220915114832 c94b446f system.bb.threads%s
+D s-bbthqu.ads		20220915114832 cd23d79e system.bb.threads.queues%s
+D s-bbtime.ads		20220915114832 ad086247 system.bb.time%s
+D s-finmas.ads		20220915114832 1ab4dba8 system.finalization_masters%s
+D s-finroo.ads		20220915114832 4ff27390 system.finalization_root%s
+D s-interr.ads		20220915114832 d74bd991 system.interrupts%s
+D s-multip.ads		20220915114832 f33e0e35 system.multiprocessors%s
+D s-mufalo.ads		20220915114832 3dca0374 system.multiprocessors.fair_locks%s
+D s-musplo.ads		20220915114832 69fa25c4 system.multiprocessors.spin_locks%s
+D s-osinte.ads		20220915114832 229b14dd system.os_interface%s
+D s-parame.ads		20220915114832 8e90778f system.parameters%s
+D s-pooglo.ads		20220915114832 ede33ef8 system.pool_global%s
+D s-putima.ads		20220915114832 4e095881 system.put_images%s
+D s-secsta.ads		20220915114830 56a2861c system.secondary_stack%s
+D s-stalib.ads		20220915114832 472fbca8 system.standard_library%s
+D s-stoele.ads		20220915114830 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20220915114830 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20220915114832 e9fa2dd8 system.storage_pools%s
+D s-stratt.ads		20220915114830 7bdda3fa system.stream_attributes%s
+D s-tasinf.ads		20220915114832 801abd01 system.task_info%s
+D s-taspri.ads		20220915114832 37f162b4 system.task_primitives%s
+D s-taskin.ads		20220915114832 989d56fd system.tasking%s
+D s-taprob.ads		20220915114832 c8fc0753 system.tasking.protected_objects%s
+D s-traent.ads		20220915114832 26a8d361 system.traceback_entries%s
+D s-unstyp.ads		20220915114830 2b077493 system.unsigned_types%s
+D unchconv.ads		20220915114830 ca2f9e18 unchecked_conversion%s
 G a e
 G c Z s b [setdirectionhelper carobject__car 9 17 none]
 G c Z s b [setdirectionlb carobject__car 12 17 none]
@@ -185,10 +185,6 @@ X 13 carobject.ads
 44i7 Dir2LF{22|7I9} 14|32r37
 45i7 Dir1RF{22|7I9} 14|38r29
 46i7 Dir2RF{22|7I9} 14|38r37
-47i7 Ultrasonic{22|7I9}
-48i7 IrLeft{22|7I9}
-49i7 IrRight{22|7I9}
-50i7 IrRear{22|7I9}
 52i7 CurrentSpeedLeft{22|28I9} 14|66r10 77r17
 53i7 CurrentSpeedRight{22|28I9} 14|72r10 82r17
 54b7 CurrentDirectionLB{boolean} 14|21r10 44r17
@@ -208,16 +204,14 @@ X 19 hal-uart.ads
 48h9*UART_Port
 X 21 microbit.ads
 58K9*MicroBit 13|1r6 2r6 9r43 10r40 21r39 22r39 23r36 24r37 36r17 37r18 38r18
-. 39r16 40r16 41r16 42r16 43r16 44r16 45r16 46r16 47r20 48r16 49r17 50r16
-. 52r26 53r27 14|5r43 6r43 10r13 11r13 13r13 14r13 63r38 65r10 69r39 71r10
-. 75r36 80r37 21|112e13
+. 39r16 40r16 41r16 42r16 43r16 44r16 45r16 46r16 52r26 53r27 14|5r43 6r43
+. 10r13 11r13 13r13 14r13 63r38 65r10 69r39 71r10 75r36 80r37 21|112e13
 X 22 microbit-iosfortasking.ads
 5K18*IOsForTasking 13|1w15 9r52 10r49 21r48 22r48 23r45 24r46 36r26 37r27
-. 38r27 39r25 40r25 41r25 42r25 43r25 44r25 45r25 46r25 47r29 48r25 49r26
-. 50r25 52r35 53r36 14|5r52 6r52 10r22 11r22 13r22 14r22 63r47 65r19 69r48
-. 71r19 75r45 80r46 22|91e27
+. 38r27 39r25 40r25 41r25 42r25 43r25 44r25 45r25 46r25 52r35 53r36 14|5r52
+. 6r52 10r22 11r22 13r22 14r22 63r47 65r19 69r48 71r19 75r45 80r46 22|91e27
 7I9*Pin_Id<short_short_integer> 13|9r66 10r63 36r40 37r41 38r41 39r39 40r39
-. 41r39 42r39 43r39 44r39 45r39 46r39 47r43 48r39 49r40 50r39 14|5r66 6r66
+. 41r39 42r39 43r39 44r39 45r39 46r39 14|5r66 6r66
 22U14*Set 14|10s36 11s36 13s36 14s36
 28I9*Analog_Value<short_integer> 13|21r62 22r62 23r59 24r60 52r49 53r50 14|63r61
 . 69r62 75r59 80r60
