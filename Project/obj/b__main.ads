@@ -46,6 +46,8 @@ package ada_main is
    --  machine_code%s
    --  system.parameters%s
    --  system.parameters%b
+   --  system.restrictions%s
+   --  system.restrictions%b
    --  system.storage_elements%s
    --  system.storage_elements%b
    --  system.secondary_stack%s
@@ -177,6 +179,14 @@ package ada_main is
    --  system.pool_global%b
    --  system.tasking.protected_objects%s
    --  system.tasking.protected_objects%b
+   --  system.tasking.protected_objects.entries%s
+   --  system.tasking.protected_objects.entries%b
+   --  system.tasking.protected_objects.multiprocessors%s
+   --  system.tasking.protected_objects.multiprocessors%b
+   --  system.tasking.queuing%s
+   --  system.tasking.queuing%b
+   --  system.tasking.protected_objects.operations%s
+   --  system.tasking.protected_objects.operations%b
    --  system.tasking.restricted%s
    --  system.tasking.restricted.stages%s
    --  system.tasking.restricted.stages%b
@@ -250,6 +260,8 @@ package ada_main is
    --  nrf.device%s
    --  nrf.device%b
    --  microbit%s
+   --  microbit.console%s
+   --  microbit.console%b
    --  microbit.iosfortasking%s
    --  microbit.iosfortasking%b
    --  distancesensors%s

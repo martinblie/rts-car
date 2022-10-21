@@ -9,20 +9,21 @@ package CarObject is
    
    type PinRecord is record
       PwmLeft : MicroBit.IOsForTasking.Pin_Id := 1;
-      PwmRight : MicroBit.IOsForTasking.Pin_Id := 2;
-      PwmServo : MicroBit.IOsForTasking.Pin_Id := 3;
-      Dir1LB : MicroBit.IOsForTasking.Pin_Id := 4;
-      Dir2LB : MicroBit.IOsForTasking.Pin_Id := 5;
-      Dir1RB : MicroBit.IOsForTasking.Pin_Id := 6;
-      Dir2RB : MicroBit.IOsForTasking.Pin_Id := 7;
-      Dir1LF : MicroBit.IOsForTasking.Pin_Id := 12;
-      Dir2LF : MicroBit.IOsForTasking.Pin_Id := 13;
-      Dir1RF : MicroBit.IOsForTasking.Pin_Id := 10;
-      Dir2RF : MicroBit.IOsForTasking.Pin_Id := 11;
-      Ultrasonic1Trigger : MicroBit.IOsForTasking.Pin_Id := 12;
-      Ultrasonic1Echo : MicroBit.IOsForTasking.Pin_Id := 13;
+      PwmRight : MicroBit.IOsForTasking.Pin_Id;
+      PwmServo : MicroBit.IOsForTasking.Pin_Id;
+      Dir1LB : MicroBit.IOsForTasking.Pin_Id := 14; -- black
+      Dir2LB : MicroBit.IOsForTasking.Pin_Id := 15; -- white
+      Dir1RB : MicroBit.IOsForTasking.Pin_Id := 2; -- red
+      Dir2RB : MicroBit.IOsForTasking.Pin_Id := 3; -- brown
+      Dir1LF : MicroBit.IOsForTasking.Pin_Id := 12; -- grey
+      Dir2LF : MicroBit.IOsForTasking.Pin_Id := 13; -- purple
+      Dir1RF : MicroBit.IOsForTasking.Pin_Id := 6; -- yellow
+      Dir2RF : MicroBit.IOsForTasking.Pin_Id := 7; -- orange
+      Ultrasonic1Trigger : MicroBit.IOsForTasking.Pin_Id := 10;
+      Ultrasonic1Echo : MicroBit.IOsForTasking.Pin_Id := 11;
    end record;
    Pins : PinRecord;
+   
    
    protected DirectionLB is
       procedure Set(Direction : Dir);
@@ -66,11 +67,12 @@ package CarObject is
       CurrentSpeedRight : MicroBit.IOsForTasking.Analog_Value := 0;
    end SpeedRight;
    
-   protected ObstacleDistanceFront is
+   protected ObstacleDistanceFront with Priority => 5 is
       procedure Set(Dist : Integer);
-      function Get return Integer;
+      entry Get(Var : out Integer);
    private
-      CurrentObstacleDistanceFront : Integer;
+      CurrentObstacleDistanceFront : Integer := 120;
+      IsUpdated : Boolean := False;
    end ObstacleDistanceFront;
    
    

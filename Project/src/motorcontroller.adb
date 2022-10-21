@@ -12,7 +12,7 @@ package body MotorController is
         Direction = Backward then
          MicroBit.IOsForTasking.Set(Pin1,False);
          MicroBit.IOsForTasking.Set(Pin2,True);
-      else
+      elsif Direction = Stop then
          MicroBit.IOsForTasking.Set(Pin1,False);
          MicroBit.IOsForTasking.Set(Pin2,False);
       end if;
