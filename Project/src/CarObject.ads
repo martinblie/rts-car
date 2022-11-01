@@ -1,4 +1,5 @@
 with MicroBit.IOsForTasking;
+with MicroBit.Servos;
 with Microbit.TimeWithRTC1;
 
 
@@ -10,7 +11,7 @@ package CarObject is
    type PinRecord is record
       PwmLeft : MicroBit.IOsForTasking.Pin_Id := 1;
       PwmRight : MicroBit.IOsForTasking.Pin_Id;
-      PwmServo : MicroBit.IOsForTasking.Pin_Id;
+      PwmServo : MicroBit.Servos.Servo_Pin_Id := 0;
       Dir1LB : MicroBit.IOsForTasking.Pin_Id := 14; -- black
       Dir2LB : MicroBit.IOsForTasking.Pin_Id := 15; -- white
       Dir1RB : MicroBit.IOsForTasking.Pin_Id := 2; -- red
@@ -19,8 +20,8 @@ package CarObject is
       Dir2LF : MicroBit.IOsForTasking.Pin_Id := 13; -- purple
       Dir1RF : MicroBit.IOsForTasking.Pin_Id := 6; -- yellow
       Dir2RF : MicroBit.IOsForTasking.Pin_Id := 7; -- orange
-      Ultrasonic1Trigger : MicroBit.IOsForTasking.Pin_Id := 10;
-      Ultrasonic1Echo : MicroBit.IOsForTasking.Pin_Id := 11;
+      Ultrasonic1Trigger : MicroBit.IOsForTasking.Pin_Id := 10; -- orange
+      Ultrasonic1Echo : MicroBit.IOsForTasking.Pin_Id := 11; --yellow
    end record;
    Pins : PinRecord;
    

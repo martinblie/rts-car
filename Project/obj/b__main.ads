@@ -177,6 +177,8 @@ package ada_main is
    --  system.assertions%b
    --  system.pool_global%s
    --  system.pool_global%b
+   --  system.relative_delays%s
+   --  system.relative_delays%b
    --  system.tasking.protected_objects%s
    --  system.tasking.protected_objects%b
    --  system.tasking.protected_objects.entries%s
@@ -211,6 +213,7 @@ package ada_main is
    --  nrf_svd.gpiote%s
    --  nrf_svd.power%s
    --  nrf_svd.ppi%s
+   --  nrf_svd.pwm%s
    --  nrf_svd.qdec%s
    --  nrf_svd.radio%s
    --  nrf_svd.rng%s
@@ -266,12 +269,16 @@ package ada_main is
    --  microbit.iosfortasking%b
    --  distancesensors%s
    --  distancesensors%b
+   --  microbit.servos%s
+   --  microbit.servos%b
    --  microbit.timewithrtc1%s
    --  microbit.timewithrtc1%b
    --  carobject%s
    --  carobject%b
    --  motorcontroller%s
    --  motorcontroller%b
+   --  servocontrol%s
+   --  servocontrol%b
    --  brain%s
    --  brain%b
    --  main%b

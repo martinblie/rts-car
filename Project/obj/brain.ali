@@ -24,7 +24,7 @@ RV NO_ELABORATION_CODE
 RV MAX_TASKS=2
 RV MAX_ENTRY_QUEUE_LENGTH=1+
 
-U brain%b		brain.adb		ae20f5c9 OO PK
+U brain%b		brain.adb		b724c9ee OO PK
 W ada%s			ada.ads			ada.ali
 W ada.real_time%s	a-reatim.adb		a-reatim.ali
 Z ada.real_time.delays%s  a-retide.adb		a-retide.ali
@@ -33,7 +33,9 @@ W carobject%s		carobject.adb		carobject.ali  AD
 W distancesensors%s	distancesensors.adb	distancesensors.ali  AD
 W microbit%s		microbit.ads		microbit.ali
 W microbit.console%s	microbit-console.adb	microbit-console.ali
+W microbit.servos%s	microbit-servos.adb	microbit-servos.ali
 W motorcontroller%s	motorcontroller.adb	motorcontroller.ali  AD
+W servocontrol%s	servocontrol.adb	servocontrol.ali  AD
 Z system%s		system.ads		system.ali
 Z system.tasking%s	s-taskin.adb		s-taskin.ali
 Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
@@ -50,149 +52,159 @@ Z system.tasking%s	s-taskin.adb		s-taskin.ali
 Z system.tasking.restricted.stages%s  s-tarest.adb  s-tarest.ali
 T 2 2
 
-D ada.ads		20220915114830 76789da1 ada%s
-D a-except.ads		20220915114830 946f3014 ada.exceptions%s
-D a-finali.ads		20220915114830 bf4f806b ada.finalization%s
-D a-interr.ads		20220915114832 bdf68b51 ada.interrupts%s
-D a-intnam.ads		20220915114832 543e27b6 ada.interrupts.names%s
-D a-reatim.ads		20220915114832 cfe92427 ada.real_time%s
-D a-retide.ads		20220915114832 081cdaa4 ada.real_time.delays%s
-D a-stream.ads		20220915114830 119b8fb3 ada.streams%s
-D a-string.ads		20220915114830 90ac6797 ada.strings%s
-D a-sttebu.ads		20220915114830 18209c64 ada.strings.text_buffers%s
-D a-stuten.ads		20220915114830 808c40ad ada.strings.utf_encoding%s
-D a-tags.ads		20220915114830 9eaa38c6 ada.tags%s
-D a-taside.ads		20220915114832 00e3a3f6 ada.task_identification%s
-D a-unccon.ads		20220915114830 0e9b276f ada.unchecked_conversion%s
-D brain.ads		20221020104404 e0efc457 brain%s
-D brain.adb		20221021151512 8f0e091b brain%b
-D carobject.ads		20221021151512 190c30a7 carobject%s
-D distancesensors.ads	20221020092452 33fed8de distancesensors%s
-D hal.ads		20220915115334 2b42c80e hal%s
-D hal-gpio.ads		20220915115334 7f0c2ffe hal.gpio%s
-D hal-i2c.ads		20220915115334 0ed73138 hal.i2c%s
-D hal-spi.ads		20220915115334 fe139819 hal.spi%s
-D hal-uart.ads		20220915115334 d58316b4 hal.uart%s
-D interfac.ads		20220915114830 edec285f interfaces%s
-D microbit.ads		20220915115332 3b54a3e8 microbit%s
-D microbit-console.ads	20220915115332 0bb00661 microbit.console%s
-D microbit-iosfortasking.ads  20220915115332 60e097d3 microbit.iosfortasking%s
-D microbit-timewithrtc1.ads  20220915115332 6478704a microbit.timewithrtc1%s
-D motorcontroller.ads	20221020092452 2f6af2ba motorcontroller%s
-D nrf.ads		20220915115332 74cf72f5 nrf%s
-D nrf-device.ads	20220915115332 9c9916c4 nrf.device%s
-D nrf-gpio.ads		20220915115332 ab6d4598 nrf.gpio%s
-D nrf-rtc.ads		20220915115332 36d88130 nrf.rtc%s
-D nrf-spi_master.ads	20220915115332 a8ff49a3 nrf.spi_master%s
-D nrf-timers.ads	20220915115332 385f1a57 nrf.timers%s
-D nrf-twi.ads		20220915115332 4881713f nrf.twi%s
-D nrf-uart.ads		20220915115332 9fa4b8b9 nrf.uart%s
-D nrf_svd.ads		20220915115332 87ba21d7 nrf_svd%s
-D nrf_svd-rtc.ads	20220915115332 57c7ffc8 nrf_svd.rtc%s
-D nrf_svd-spi.ads	20220915115332 6e2ffb69 nrf_svd.spi%s
-D nrf_svd-timer.ads	20220915115332 ba50db1c nrf_svd.timer%s
-D nrf_svd-twi.ads	20220915115332 68301534 nrf_svd.twi%s
-D nrf_svd-uart.ads	20220915115332 83bcebc8 nrf_svd.uart%s
-D system.ads		20220915114832 ad54c63c system%s
-D s-bb.ads		20220915114830 09e072ae system.bb%s
-D s-bbbopa.ads		20220915114832 f68efaf0 system.bb.board_parameters%s
-D s-bbbosu.ads		20220915114832 0f820a2a system.bb.board_support%s
-D s-bbcppr.ads		20220915114832 ac5bcd4d system.bb.cpu_primitives%s
-D s-bbinte.ads		20220915114832 c88d39da system.bb.interrupts%s
-D s-bbmcpa.ads		20220915114832 9339744a system.bb.mcu_parameters%s
-D s-bbpara.ads		20220915114832 63167d1e system.bb.parameters%s
-D s-bbthre.ads		20220915114832 c94b446f system.bb.threads%s
-D s-bbthqu.ads		20220915114832 cd23d79e system.bb.threads.queues%s
-D s-bbtime.ads		20220915114832 ad086247 system.bb.time%s
-D s-finmas.ads		20220915114832 1ab4dba8 system.finalization_masters%s
-D s-finroo.ads		20220915114832 4ff27390 system.finalization_root%s
-D s-interr.ads		20220915114832 d74bd991 system.interrupts%s
-D s-multip.ads		20220915114832 f33e0e35 system.multiprocessors%s
-D s-mufalo.ads		20220915114832 3dca0374 system.multiprocessors.fair_locks%s
-D s-musplo.ads		20220915114832 69fa25c4 system.multiprocessors.spin_locks%s
-D s-osinte.ads		20220915114832 229b14dd system.os_interface%s
-D s-parame.ads		20220915114832 8e90778f system.parameters%s
-D s-pooglo.ads		20220915114832 ede33ef8 system.pool_global%s
-D s-putima.ads		20220915114832 4e095881 system.put_images%s
-D s-secsta.ads		20220915114830 56a2861c system.secondary_stack%s
-D s-stalib.ads		20220915114832 472fbca8 system.standard_library%s
-D s-stoele.ads		20220915114830 2dc34a04 system.storage_elements%s
-D s-stoele.adb		20220915114830 ed88f8fb system.storage_elements%b
-D s-stopoo.ads		20220915114832 e9fa2dd8 system.storage_pools%s
-D s-stratt.ads		20220915114830 7bdda3fa system.stream_attributes%s
-D s-tasinf.ads		20220915114832 801abd01 system.task_info%s
-D s-taspri.ads		20220915114832 37f162b4 system.task_primitives%s
-D s-taskin.ads		20220915114832 989d56fd system.tasking%s
-D s-taprob.ads		20220915114832 c8fc0753 system.tasking.protected_objects%s
-D s-tpoben.ads		20220915114832 8351b91e system.tasking.protected_objects.entries%s
-D s-tpobop.ads		20220915114832 1882ba41 system.tasking.protected_objects.operations%s
-D s-tasres.ads		20220915114832 0c8ef6fb system.tasking.restricted%s
-D s-tarest.ads		20220915114832 c88b6d9a system.tasking.restricted.stages%s
-D s-traent.ads		20220915114832 26a8d361 system.traceback_entries%s
-D s-unstyp.ads		20220915114830 2b077493 system.unsigned_types%s
-D unchconv.ads		20220915114830 ca2f9e18 unchecked_conversion%s
+D ada.ads		20220915114402 76789da1 ada%s
+D a-except.ads		20220915114402 946f3014 ada.exceptions%s
+D a-finali.ads		20220915114402 bf4f806b ada.finalization%s
+D a-interr.ads		20220915114404 bdf68b51 ada.interrupts%s
+D a-intnam.ads		20220915114404 543e27b6 ada.interrupts.names%s
+D a-reatim.ads		20220915114404 cfe92427 ada.real_time%s
+D a-retide.ads		20220915114404 081cdaa4 ada.real_time.delays%s
+D a-stream.ads		20220915114402 119b8fb3 ada.streams%s
+D a-string.ads		20220915114402 90ac6797 ada.strings%s
+D a-sttebu.ads		20220915114402 18209c64 ada.strings.text_buffers%s
+D a-stuten.ads		20220915114402 808c40ad ada.strings.utf_encoding%s
+D a-tags.ads		20220915114402 9eaa38c6 ada.tags%s
+D a-taside.ads		20220915114404 00e3a3f6 ada.task_identification%s
+D a-unccon.ads		20220915114402 0e9b276f ada.unchecked_conversion%s
+D brain.ads		20221029185728 e0efc457 brain%s
+D brain.adb		20221030194000 dec8ee8c brain%b
+D carobject.ads		20221030190146 931f39c4 carobject%s
+D distancesensors.ads	20221029185728 33fed8de distancesensors%s
+D hal.ads		20221013104122 2b42c80e hal%s
+D hal-gpio.ads		20221013104122 7f0c2ffe hal.gpio%s
+D hal-i2c.ads		20221013104122 0ed73138 hal.i2c%s
+D hal-spi.ads		20221013104122 fe139819 hal.spi%s
+D hal-uart.ads		20221013104122 d58316b4 hal.uart%s
+D interfac.ads		20220915114402 edec285f interfaces%s
+D microbit.ads		20221013104122 3b54a3e8 microbit%s
+D microbit-console.ads	20221013104122 0bb00661 microbit.console%s
+D microbit-iosfortasking.ads  20221013104122 60e097d3 microbit.iosfortasking%s
+D microbit-servos.ads	20221013104122 3dc96590 microbit.servos%s
+D microbit-timewithrtc1.ads  20221013104122 6478704a microbit.timewithrtc1%s
+D motorcontroller.ads	20221029185728 2f6af2ba motorcontroller%s
+D nrf.ads		20221013104120 74cf72f5 nrf%s
+D nrf-device.ads	20221013104120 9c9916c4 nrf.device%s
+D nrf-gpio.ads		20221013104120 ab6d4598 nrf.gpio%s
+D nrf-rtc.ads		20221013104120 36d88130 nrf.rtc%s
+D nrf-spi_master.ads	20221013104120 a8ff49a3 nrf.spi_master%s
+D nrf-timers.ads	20221020104830 15fa58e3 nrf.timers%s
+D nrf-twi.ads		20221013104120 4881713f nrf.twi%s
+D nrf-uart.ads		20221013104120 9fa4b8b9 nrf.uart%s
+D nrf_svd.ads		20221013104122 87ba21d7 nrf_svd%s
+D nrf_svd-rtc.ads	20221013104122 57c7ffc8 nrf_svd.rtc%s
+D nrf_svd-spi.ads	20221013104122 6e2ffb69 nrf_svd.spi%s
+D nrf_svd-timer.ads	20221013104122 ba50db1c nrf_svd.timer%s
+D nrf_svd-twi.ads	20221013104122 68301534 nrf_svd.twi%s
+D nrf_svd-uart.ads	20221013104122 83bcebc8 nrf_svd.uart%s
+D servocontrol.ads	20221030183606 ff18b743 servocontrol%s
+D system.ads		20220915114404 ad54c63c system%s
+D s-bb.ads		20220915114402 09e072ae system.bb%s
+D s-bbbopa.ads		20220915114404 f68efaf0 system.bb.board_parameters%s
+D s-bbbosu.ads		20220915114404 0f820a2a system.bb.board_support%s
+D s-bbcppr.ads		20220915114404 ac5bcd4d system.bb.cpu_primitives%s
+D s-bbinte.ads		20220915114404 c88d39da system.bb.interrupts%s
+D s-bbmcpa.ads		20220915114404 9339744a system.bb.mcu_parameters%s
+D s-bbpara.ads		20220915114404 63167d1e system.bb.parameters%s
+D s-bbthre.ads		20220915114404 c94b446f system.bb.threads%s
+D s-bbthqu.ads		20220915114404 cd23d79e system.bb.threads.queues%s
+D s-bbtime.ads		20220915114404 ad086247 system.bb.time%s
+D s-finmas.ads		20220915114404 1ab4dba8 system.finalization_masters%s
+D s-finroo.ads		20220915114404 4ff27390 system.finalization_root%s
+D s-interr.ads		20220915114404 d74bd991 system.interrupts%s
+D s-multip.ads		20220915114404 f33e0e35 system.multiprocessors%s
+D s-mufalo.ads		20220915114404 3dca0374 system.multiprocessors.fair_locks%s
+D s-musplo.ads		20220915114404 69fa25c4 system.multiprocessors.spin_locks%s
+D s-osinte.ads		20220915114404 229b14dd system.os_interface%s
+D s-parame.ads		20220915114404 8e90778f system.parameters%s
+D s-pooglo.ads		20220915114404 ede33ef8 system.pool_global%s
+D s-putima.ads		20220915114404 4e095881 system.put_images%s
+D s-secsta.ads		20220915114402 56a2861c system.secondary_stack%s
+D s-stalib.ads		20220915114404 472fbca8 system.standard_library%s
+D s-stoele.ads		20220915114402 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20220915114402 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20220915114404 e9fa2dd8 system.storage_pools%s
+D s-stratt.ads		20220915114402 7bdda3fa system.stream_attributes%s
+D s-tasinf.ads		20220915114404 801abd01 system.task_info%s
+D s-taspri.ads		20220915114404 37f162b4 system.task_primitives%s
+D s-taskin.ads		20220915114404 989d56fd system.tasking%s
+D s-taprob.ads		20220915114404 c8fc0753 system.tasking.protected_objects%s
+D s-tpoben.ads		20220915114404 8351b91e system.tasking.protected_objects.entries%s
+D s-tpobop.ads		20220915114404 1882ba41 system.tasking.protected_objects.operations%s
+D s-tasres.ads		20220915114404 0c8ef6fb system.tasking.restricted%s
+D s-tarest.ads		20220915114404 c88b6d9a system.tasking.restricted.stages%s
+D s-traent.ads		20220915114404 26a8d361 system.traceback_entries%s
+D s-unstyp.ads		20220915114402 2b077493 system.unsigned_types%s
+D unchconv.ads		20220915114402 ca2f9e18 unchecked_conversion%s
 G a e
-G c b b b [b brain 6 1 none]
+G c b b b [b brain 8 1 none]
 G c Z s b [distancesensorfrontmanagerTK brain 3 9 none]
 G c Z s s [distancesensorfrontmanagerTKVIP brain 3 4 none]
 G c Z s b [obstacleavoiderTK brain 4 9 none]
 G c Z s s [obstacleavoiderTKVIP brain 4 4 none]
-G r c none [b brain 6 1 none] [getdistanceultrasonic distancesensors 5 13 none]
-G r p none [b brain 6 1 none] [set carobject__obstacledistancefront 71 17 none]
-G r c none [b brain 6 1 none] [setdirectionall motorcontroller 10 14 none]
-G r o none [b brain 6 1 none] [get carobject__obstacledistancefront 72 13 none]
-G r c none [b brain 6 1 none] [setdirection motorcontroller 5 14 none]
+G r c none [b brain 8 1 none] [getdistanceultrasonic distancesensors 5 13 none]
+G r p none [b brain 8 1 none] [set carobject__obstacledistancefront 72 17 none]
+G r c none [b brain 8 1 none] [setdirectionall motorcontroller 10 14 none]
+G r o none [b brain 8 1 none] [get carobject__obstacledistancefront 73 13 none]
+G r c none [b brain 8 1 none] [turnservo servocontrol 7 14 none]
+G r c none [b brain 8 1 none] [setdirection motorcontroller 5 14 none]
 G r c none [distancesensorfrontmanagerTK brain 3 9 none] [getdistanceultrasonic distancesensors 5 13 none]
-G r p none [distancesensorfrontmanagerTK brain 3 9 none] [set carobject__obstacledistancefront 71 17 none]
+G r p none [distancesensorfrontmanagerTK brain 3 9 none] [set carobject__obstacledistancefront 72 17 none]
 G r c none [obstacleavoiderTK brain 4 9 none] [setdirectionall motorcontroller 10 14 none]
-G r o none [obstacleavoiderTK brain 4 9 none] [get carobject__obstacledistancefront 72 13 none]
+G r o none [obstacleavoiderTK brain 4 9 none] [get carobject__obstacledistancefront 73 13 none]
+G r c none [obstacleavoiderTK brain 4 9 none] [turnservo servocontrol 7 14 none]
 G r c none [obstacleavoiderTK brain 4 9 none] [setdirection motorcontroller 5 14 none]
 X 1 ada.ads
-16K9*Ada 20e8 16|5r6 5r25 10r19 11r16 11r43 13r20 29r19 30r16 30r43 34r20
-. 43r25 43r47 49r25 49r47
+16K9*Ada 20e8 16|5r6 5r25 12r19 13r16 13r43 15r20 31r19 32r16 32r43 41r20
+. 58r28 58r50 65r28 65r50
 X 6 a-reatim.ads
-40K13*Real_Time 181e18 16|5w10 5r29 10r23 11r20 11r47 13r24 29r23 30r20 30r47
-. 34r24 43r29 43r51 49r29 49r51
-50M9*Time<54|46M9> 16|10r33 29r33
-60I9*Time_Span<54|81I9> 16|11r30 30r30
-67V13*Clock{50M9}<54|134p13> 16|13s34 34s34 43s39 49s39
-71V14*"+"{50M9} 16|16s33 38s33 43s45 49s45
-127V13*Milliseconds{60I9} 16|11s57 30s57 43s61 49s61
+40K13*Real_Time 181e18 16|5w10 5r29 12r23 13r20 13r47 15r24 31r23 32r20 32r47
+. 41r24 58r32 58r54 65r32 65r54
+50M9*Time<56|46M9> 16|12r33 31r33
+60I9*Time_Span<56|81I9> 16|13r30 32r30
+67V13*Clock{50M9}<56|134p13> 16|15s34 41s34 58s42 65s42
+71V14*"+"{50M9} 16|18s33 45s33 58s48 65s48
+127V13*Milliseconds{60I9} 16|13s57 32s57 58s64 65s64
 X 15 brain.ads
-1K9*Brain 10l5 10e10 16|6b14 65l5 65t10
-3t9*DistanceSensorFrontManager 16|7b14 25l8 25t34
-4t9*ObstacleAvoider 16|27b14 59l11 59t26
+1K9*Brain 10l5 10e10 16|8b14 93l5 93t10
+3t9*DistanceSensorFrontManager 16|9b14 27l8 27t34
+4t9*ObstacleAvoider 16|29b14 87l11 87t26
 X 16 brain.adb
-8i7 CurrentDist{integer} 17m10 18r13 18r41 19r39 20r25
-9i7 PrevDist{integer} 18r28 20m13
-10m7 StartTime{6|50M9} 13m7 15r22 16m10 16r23
-11i7 Period{6|60I9} 16r35
-28b7 HasAvoided{boolean} 52m13 54r13
-29m7 StartTime{6|50M9} 34m7 36r22 38m10 38r23
-30i7 Period{6|60I9} 38r35
-31i7 Dist{integer} 37m36 40r13 40r28
+10i7 CurrentDist{integer} 19m10 20r13 20r41 21r39 22r25
+11i7 PrevDist{integer} 20r28 22m13
+12m7 StartTime{6|50M9} 15m7 17r22 18m10 18r23
+13i7 Period{6|60I9} 18r35
+30b7 HasAvoided{boolean} 80m13 82r13
+31m7 StartTime{6|50M9} 41m7 43r22 45m10 45r23
+32i7 Period{6|60I9} 45r35
+33i7 Dist{integer} 44m36 47r13 47r28
+34i7 DistL{integer} 50m39 53r16
+35i7 DistR{integer} 52m39 53r24
+36i7 dir1{28|41I9} 49r36
+37i7 dir2{28|41I9} 51r36
+38i7 dirF{28|41I9} 59r39 66r39
 X 17 carobject.ads
-5K9*CarObject 16|1w6 1r21 17|90e14
-8n5*Forward{7E9} 16|33r23 45r52 48r52 55r29
-8n14*Backward{7E9} 16|41r52 42r52 46r52 47r52
-14i7*Dir1LB{27|7I9} 16|47r31
-15i7*Dir2LB{27|7I9} 16|47r44
-16i7*Dir1RB{27|7I9} 16|41r31 45r31
-17i7*Dir2RB{27|7I9} 16|41r44 45r44
-18i7*Dir1LF{27|7I9} 16|48r31
-19i7*Dir2LF{27|7I9} 16|48r44
-20i7*Dir1RF{27|7I9} 16|42r31 46r31
-21i7*Dir2RF{27|7I9} 16|42r44 46r44
-22i7*Ultrasonic1Trigger{27|7I9} 16|17r52
-23i7*Ultrasonic1Echo{27|7I9} 16|17r77
-25r4*Pins{10R9} 16|17r47 17r72 41r26 41r39 42r26 42r39 45r26 45r39 46r26
-. 46r39 47r26 47r39 48r26 48r39
-70w14*ObstacleDistanceFront 16|19r13 37r10
-71U17 Set 16|19s35
-72Y13 Get 16|37s32
+6K9*CarObject 16|1w6 1r21 17|91e14
+9n5*Forward{8E9} 16|40r23 56r55 57r55 61r55 62r55 83r29
+9n14*Backward{8E9} 16|54r55 55r55 63r55 64r55
+9n24*Stop{8E9} 16|48r29
+15i7*Dir1LB{27|7I9} 16|56r34 63r34
+16i7*Dir2LB{27|7I9} 16|56r47 63r47
+17i7*Dir1RB{27|7I9} 16|54r34 61r34
+18i7*Dir2RB{27|7I9} 16|54r47 61r47
+19i7*Dir1LF{27|7I9} 16|57r34 64r34
+20i7*Dir2LF{27|7I9} 16|57r47 64r47
+21i7*Dir1RF{27|7I9} 16|55r34 62r34
+22i7*Dir2RF{27|7I9} 16|55r47 62r47
+23i7*Ultrasonic1Trigger{27|7I9} 16|19r52
+24i7*Ultrasonic1Echo{27|7I9} 16|19r77
+26r4*Pins{11R9} 16|19r47 19r72 54r29 54r42 55r29 55r42 56r29 56r42 57r29
+. 57r42 61r29 61r42 62r29 62r42 63r29 63r42 64r29 64r42
+71w14*ObstacleDistanceFront 16|21r13 44r10 50r13 52r13
+72U17 Set 16|21s35
+73Y13 Get 16|44s32 50s35 52s35
 X 18 distancesensors.ads
 3K9*DistanceSensors 16|2w6 2r27 18|10e20
-5V13*GetDistanceUltrasonic{integer} 16|17s25
+5V13*GetDistanceUltrasonic{integer} 16|19s25
 X 20 hal-gpio.ads
 47h9*GPIO_Point
 X 21 hal-i2c.ads
@@ -202,24 +214,30 @@ X 22 hal-spi.ads
 X 23 hal-uart.ads
 48h9*UART_Port
 X 25 microbit.ads
-58K9*MicroBit 16|4r6 25|112e13
+58K9*MicroBit 16|4r6 6r6 6r27 25|115e13
 X 26 microbit-console.ads
 32K18*Console 16|4w15 26|49e21
 X 27 microbit-iosfortasking.ads
 7I9*Pin_Id<short_short_integer>
-X 29 motorcontroller.ads
-3K9*MotorController 16|3w6 3r27 29|12e20
-5U14*SetDirection 16|41s13 42s13 45s13 46s13 47s13 48s13
-10U14*SetDirectionAll 16|33s7 55s13
-X 54 s-bbtime.ads
+X 28 microbit-servos.ads
+34K18*Servos 16|6w15 6r36 28|52e20
+41I9*Servo_Set_Point<short_integer> 16|36r14 37r14 38r14
+X 30 motorcontroller.ads
+3K9*MotorController 16|3w6 3r27 30|12e20
+5U14*SetDirection 16|54s16 55s16 56s16 57s16 61s16 62s16 63s16 64s16
+10U14*SetDirectionAll 16|40s7 48s13 83s13
+X 45 servocontrol.ads
+2K9*Servocontrol 16|7w6 49r13 51r13 59r16 66r16 45|9e17
+7U14*turnServo 16|49s26 51s26 59s29 66s29
+X 56 s-bbtime.ads
 46M9*Time
 81I9*Time_Span<long_long_integer>
-X 57 s-interr.ads
+X 59 s-interr.ads
 97U14*Install_Restricted_Handlers_Sequential 98i<c,__gnat_attach_all_handlers>22
-X 65 s-secsta.ads
+X 67 s-secsta.ads
 46P9*SS_Stack_Ptr(43R9)
-X 73 s-taskin.ads
-398V13*Get_Sec_Stack{65|46P9} 399i<c,__gnat_get_secondary_stack>22
-X 78 s-tarest.ads
+X 75 s-taskin.ads
+398V13*Get_Sec_Stack{67|46P9} 399i<c,__gnat_get_secondary_stack>22
+X 80 s-tarest.ads
 232U14*Activate_All_Tasks_Sequential 233i<c,__gnat_activate_all_tasks>22
 
