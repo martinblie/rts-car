@@ -77,10 +77,13 @@ package body CarObject is
       procedure Set(Dist : Integer) is
       begin
          CurrentObstacleDistanceFront := Dist;
+         IsUpdated := True;
       end Set;
-         function Get return Integer is
+      entry Get(Var : out Integer)
+        when IsUpdated = True is
          begin
-            return CurrentObstacleDistanceFront;
+            Var := CurrentObstacleDistanceFront;
+            IsUpdated := False;
          end Get;
    end ObstacleDistanceFront;
       

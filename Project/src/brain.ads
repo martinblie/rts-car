@@ -1,7 +1,7 @@
 package Brain is
    
-   task DistanceSensorFrontManager;
-   task ObstacleAvoider;
+   task DistanceSensorFrontManager with Priority => 1;
+   task ObstacleAvoider with Priority => 2;
      
      
 
