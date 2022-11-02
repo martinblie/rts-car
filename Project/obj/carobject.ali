@@ -21,7 +21,7 @@ U carobject%b		carobject.adb		dfcc63dd NE OO PK
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
 
-U carobject%s		carobject.ads		b441a31d EE OO PF PK
+U carobject%s		carobject.ads		b2a42f13 EE OO PF PK
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 W microbit%s		microbit.ads		microbit.ali
 W microbit.iosfortasking%s  microbit-iosfortasking.adb  microbit-iosfortasking.ali
@@ -43,24 +43,21 @@ D a-taside.ads		20220916121814 00e3a3f6 ada.task_identification%s
 D a-unccon.ads		20220916121808 0e9b276f ada.unchecked_conversion%s
 D carobject.ads		20221019212036 993620ab carobject%s
 D carobject.adb		20221019205438 46fa4376 carobject%b
-D cortex_m.ads		20220916121916 38b367df cortex_m%s
-D cortex_m-nvic.ads	20220916121916 72ffb636 cortex_m.nvic%s
 D hal.ads		20220916121916 2b42c80e hal%s
 D hal-gpio.ads		20220916121916 7f0c2ffe hal.gpio%s
 D hal-i2c.ads		20220916121916 0ed73138 hal.i2c%s
 D hal-spi.ads		20220916121916 fe139819 hal.spi%s
 D hal-uart.ads		20220916121916 d58316b4 hal.uart%s
 D interfac.ads		20220916121808 edec285f interfaces%s
-D microbit.ads		20220916121916 3b54a3e8 microbit%s
-D microbit-iosfortasking.ads  20220921181408 490ff3fc microbit.iosfortasking%s
+D microbit.ads		20221021100114 3b54a3e8 microbit%s
+D microbit-iosfortasking.ads  20221102142948 4fea7ff2 microbit.iosfortasking%s
 D microbit-timewithrtc1.ads  20220916121916 6478704a microbit.timewithrtc1%s
 D nrf.ads		20220916121916 74cf72f5 nrf%s
 D nrf-device.ads	20220916121916 9c9916c4 nrf.device%s
 D nrf-gpio.ads		20220916121916 ab6d4598 nrf.gpio%s
-D nrf-interrupts.ads	20220916121916 26bbe8ef nrf.interrupts%s
 D nrf-rtc.ads		20220916121916 36d88130 nrf.rtc%s
 D nrf-spi_master.ads	20220916121916 a8ff49a3 nrf.spi_master%s
-D nrf-timers.ads	20220916121916 385f1a57 nrf.timers%s
+D nrf-timers.ads	20221021100114 15fa58e3 nrf.timers%s
 D nrf-twi.ads		20220916121916 4881713f nrf.twi%s
 D nrf-uart.ads		20220916121916 9fa4b8b9 nrf.uart%s
 D nrf_svd.ads		20220916121916 87ba21d7 nrf_svd%s
@@ -162,19 +159,19 @@ X 13 carobject.ads
 8n14*Backward{7E9}
 8n24*Stop{7E9} 31r35 38r35 45r35 52r35
 10R9*PinRecord 24e14 25r11
-11i7*PwmLeft{24|8I9}
-12i7*PwmRight{24|8I9}
-13i7*PwmServo{24|8I9}
-14i7*Dir1LB{24|8I9}
-15i7*Dir2LB{24|8I9}
-16i7*Dir1RB{24|8I9}
-17i7*Dir2RB{24|8I9}
-18i7*Dir1LF{24|8I9}
-19i7*Dir2LF{24|8I9}
-20i7*Dir1RF{24|8I9}
-21i7*Dir2RF{24|8I9}
-22i7*Ultrasonic1Trigger{24|8I9}
-23i7*Ultrasonic1Echo{24|8I9}
+11i7*PwmLeft{22|7I9}
+12i7*PwmRight{22|7I9}
+13i7*PwmServo{22|7I9}
+14i7*Dir1LB{22|7I9}
+15i7*Dir2LB{22|7I9}
+16i7*Dir1RB{22|7I9}
+17i7*Dir2RB{22|7I9}
+18i7*Dir1LF{22|7I9}
+19i7*Dir2LF{22|7I9}
+20i7*Dir1RF{22|7I9}
+21i7*Dir2RF{22|7I9}
+22i7*Ultrasonic1Trigger{22|7I9}
+23i7*Ultrasonic1Echo{22|7I9}
 25r4*Pins{10R9}
 27w14*DirectionLB 14|8b19 17l8 17t19
 28U17 Set 28>21 14|9b17 12l11 12t14
@@ -198,45 +195,45 @@ X 13 carobject.ads
 52e7 CurrentDirectionRF{7E9} 14|44r10 48r17
 55w14*SpeedLeft 14|52b19 61l8 61t17
 56U17 Set 56>21 14|53b17 56l11 56t14
-56i21 Speed{24|29I9} 14|53b21 55r30
-57V16 Get{24|29I9} 14|57b16 60l11 60t14
-59i7 CurrentSpeedLeft{24|29I9} 14|55r10 59r17
+56i21 Speed{22|28I9} 14|53b21 55r30
+57V16 Get{22|28I9} 14|57b16 60l11 60t14
+59i7 CurrentSpeedLeft{22|28I9} 14|55r10 59r17
 62w14*SpeedRight 14|64b19 73l8 73t18
 63U17 Set 63>21 14|65b17 68l11 68t14
-63i21 Speed{24|29I9} 14|65b21 67r31
-64V16 Get{24|29I9} 14|69b16 72l11 72t14
-66i7 CurrentSpeedRight{24|29I9} 14|67r10 71r17
+63i21 Speed{22|28I9} 14|65b21 67r31
+64V16 Get{22|28I9} 14|69b16 72l11 72t14
+66i7 CurrentSpeedRight{22|28I9} 14|67r10 71r17
 69w14*ObstacleDistanceFront 14|76b19 85l8 85t29
 70U17 Set 70>21 14|77b17 80l11 80t14
 70i21 Dist{integer} 14|77b21 79r42
 71V16 Get{integer} 14|81b19 84l14 84t17
 73i7 CurrentObstacleDistanceFront{integer} 14|79r10 83r20
-X 18 hal-gpio.ads
+X 16 hal-gpio.ads
 47h9*GPIO_Point
-X 19 hal-i2c.ads
+X 17 hal-i2c.ads
 48h9*I2C_Port
-X 20 hal-spi.ads
+X 18 hal-spi.ads
 48h9*SPI_Port
-X 21 hal-uart.ads
+X 19 hal-uart.ads
 48h9*UART_Port
-X 23 microbit.ads
+X 21 microbit.ads
 58K9*MicroBit 13|1r6 2r6 11r17 12r18 13r18 14r16 15r16 16r16 17r16 18r16
 . 19r16 20r16 21r16 22r28 23r25 56r29 57r27 59r26 63r29 64r27 66r27 14|53r29
-. 57r27 65r29 69r27 23|112e13
-X 24 microbit-iosfortasking.ads
-6K18*IOsForTasking 13|1w15 11r26 12r27 13r27 14r25 15r25 16r25 17r25 18r25
+. 57r27 65r29 69r27 21|115e13
+X 22 microbit-iosfortasking.ads
+5K18*IOsForTasking 13|1w15 11r26 12r27 13r27 14r25 15r25 16r25 17r25 18r25
 . 19r25 20r25 21r25 22r37 23r34 56r38 57r36 59r35 63r38 64r36 66r36 14|53r38
-. 57r36 65r38 69r36 24|92e27
-8I9*Pin_Id<short_short_integer> 13|11r40 12r41 13r41 14r39 15r39 16r39 17r39
+. 57r36 65r38 69r36 22|89e27
+7I9*Pin_Id<short_short_integer> 13|11r40 12r41 13r41 14r39 15r39 16r39 17r39
 . 18r39 19r39 20r39 21r39 22r51 23r48
-29I9*Analog_Value<short_integer> 13|56r52 57r50 59r49 63r52 64r50 66r50 14|53r52
+28I9*Analog_Value<short_integer> 13|56r52 57r50 59r49 63r52 64r50 66r50 14|53r52
 . 57r50 65r52 69r50
-X 25 microbit-timewithrtc1.ads
-5K18*TimeWithRTC1 13|2w15 25|64e26
-X 54 s-interr.ads
+X 23 microbit-timewithrtc1.ads
+5K18*TimeWithRTC1 13|2w15 23|64e26
+X 51 s-interr.ads
 97U14*Install_Restricted_Handlers_Sequential 98i<c,__gnat_attach_all_handlers>22
-X 62 s-secsta.ads
+X 59 s-secsta.ads
 46P9*SS_Stack_Ptr(43R9)
-X 70 s-taskin.ads
-398V13*Get_Sec_Stack{62|46P9} 399i<c,__gnat_get_secondary_stack>22
+X 67 s-taskin.ads
+398V13*Get_Sec_Stack{59|46P9} 399i<c,__gnat_get_secondary_stack>22
 

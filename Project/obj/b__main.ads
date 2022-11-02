@@ -42,10 +42,12 @@ package ada_main is
    --  system.bb.parameters%s
    --  system.exceptions%s
    --  system.img_int%s
+   --  system.img_lli%s
    --  system.machine_code%s
-   --  machine_code%s
    --  system.parameters%s
    --  system.parameters%b
+   --  system.restrictions%s
+   --  system.restrictions%b
    --  system.storage_elements%s
    --  system.storage_elements%b
    --  system.secondary_stack%s
@@ -68,6 +70,7 @@ package ada_main is
    --  system.traceback_entries%b
    --  system.unsigned_types%s
    --  interfaces.nrf52.rtc%s
+   --  system.img_uns%s
    --  system.wch_con%s
    --  system.wch_con%b
    --  system.wch_jis%s
@@ -177,6 +180,14 @@ package ada_main is
    --  system.pool_global%b
    --  system.tasking.protected_objects%s
    --  system.tasking.protected_objects%b
+   --  system.tasking.protected_objects.entries%s
+   --  system.tasking.protected_objects.entries%b
+   --  system.tasking.protected_objects.multiprocessors%s
+   --  system.tasking.protected_objects.multiprocessors%b
+   --  system.tasking.queuing%s
+   --  system.tasking.queuing%b
+   --  system.tasking.protected_objects.operations%s
+   --  system.tasking.protected_objects.operations%b
    --  system.tasking.restricted%s
    --  system.tasking.restricted.stages%s
    --  system.tasking.restricted.stages%b
@@ -201,6 +212,7 @@ package ada_main is
    --  nrf_svd.gpiote%s
    --  nrf_svd.power%s
    --  nrf_svd.ppi%s
+   --  nrf_svd.pwm%s
    --  nrf_svd.qdec%s
    --  nrf_svd.radio%s
    --  nrf_svd.rng%s
@@ -225,8 +237,6 @@ package ada_main is
    --  nrf.events%b
    --  nrf.gpio%s
    --  nrf.gpio%b
-   --  nrf.gpio.tasks_and_events%s
-   --  nrf.gpio.tasks_and_events%b
    --  nrf.interrupts%s
    --  nrf.interrupts%b
    --  nrf.rtc%s
@@ -235,12 +245,10 @@ package ada_main is
    --  nrf.spi_master%b
    --  nrf.tasks%s
    --  nrf.tasks%b
-   --  nrf.adc%s
-   --  nrf.adc%b
    --  nrf.clock%s
    --  nrf.clock%b
-   --  nrf.ppi%s
-   --  nrf.ppi%b
+   --  nrf.radio%s
+   --  nrf.radio%b
    --  nrf.timers%s
    --  nrf.timers%b
    --  nrf.twi%s
@@ -250,18 +258,12 @@ package ada_main is
    --  nrf.device%s
    --  nrf.device%b
    --  microbit%s
-   --  microbit.iosfortasking%s
-   --  microbit.iosfortasking%b
-   --  distancesensors%s
-   --  distancesensors%b
-   --  microbit.timewithrtc1%s
-   --  microbit.timewithrtc1%b
-   --  carobject%s
-   --  carobject%b
-   --  motorcontroller%s
-   --  motorcontroller%b
-   --  brain%s
-   --  brain%b
+   --  microbit.console%s
+   --  microbit.console%b
+   --  microbit.radio%s
+   --  microbit.radio%b
+   --  brain2%s
+   --  brain2%b
    --  main%b
    --  END ELABORATION ORDER
 

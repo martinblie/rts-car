@@ -6,10 +6,7 @@ D:\git-repos\rts-car\Project\bil.gpr
 D:\git-repos\Ada_Drivers_Library\boards\MicroBit_v2\microbit_v2_full.gpr
 20220916121916 b8158fbacb7c2d258144aded24269a63
 [BOUND OBJECT FILES]
-D:\git-repos\rts-car\Project\obj\distancesensors.o
-D:\git-repos\rts-car\Project\obj\CarObject.o
-D:\git-repos\rts-car\Project\obj\motorcontroller.o
-D:\git-repos\rts-car\Project\obj\brain.o
+D:\git-repos\rts-car\Project\obj\brain2.o
 D:\git-repos\rts-car\Project\obj\main.o
 [GENERATED SOURCE FILES]
 b__main.ads
