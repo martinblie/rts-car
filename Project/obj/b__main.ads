@@ -41,11 +41,15 @@ package ada_main is
    --  system.bb.mcu_parameters%s
    --  system.bb.parameters%s
    --  system.exceptions%s
+   --  system.float_control%s
+   --  system.float_control%b
    --  system.img_int%s
    --  system.img_lli%s
    --  system.machine_code%s
+   --  machine_code%s
    --  system.parameters%s
    --  system.parameters%b
+   --  system.powten_flt%s
    --  system.restrictions%s
    --  system.restrictions%b
    --  system.storage_elements%s
@@ -71,6 +75,8 @@ package ada_main is
    --  system.unsigned_types%s
    --  interfaces.nrf52.rtc%s
    --  system.img_uns%s
+   --  system.img_util%s
+   --  system.img_util%b
    --  system.wch_con%s
    --  system.wch_con%b
    --  system.wch_jis%s
@@ -162,6 +168,7 @@ package ada_main is
    --  system.finalization_root%s
    --  system.finalization_root%b
    --  ada.finalization%s
+   --  system.img_flt%s
    --  system.storage_pools%s
    --  system.storage_pools%b
    --  system.finalization_masters%s
@@ -237,6 +244,8 @@ package ada_main is
    --  nrf.events%b
    --  nrf.gpio%s
    --  nrf.gpio%b
+   --  nrf.gpio.tasks_and_events%s
+   --  nrf.gpio.tasks_and_events%b
    --  nrf.interrupts%s
    --  nrf.interrupts%b
    --  nrf.rtc%s
@@ -247,6 +256,8 @@ package ada_main is
    --  nrf.tasks%b
    --  nrf.clock%s
    --  nrf.clock%b
+   --  nrf.ppi%s
+   --  nrf.ppi%b
    --  nrf.radio%s
    --  nrf.radio%b
    --  nrf.timers%s
@@ -262,6 +273,18 @@ package ada_main is
    --  microbit.console%b
    --  microbit.radio%s
    --  microbit.radio%b
+   --  microbit.timewithrtc1%s
+   --  microbit.timewithrtc1%b
+   --  nrf.adc%s
+   --  nrf.adc%b
+   --  microbit.iosfortasking%s
+   --  microbit.iosfortasking%b
+   --  microbit.servos%s
+   --  microbit.servos%b
+   --  carobject%s
+   --  carobject%b
+   --  motorcontroller%s
+   --  motorcontroller%b
    --  brain2%s
    --  brain2%b
    --  main%b
