@@ -1,0 +1,11 @@
+with MicroBit.IOsForTasking; use MicroBit.IOsForTasking;
+with Ultrasonic; use Ultrasonic;
+
+package DistanceSensors is
+
+   function GetDistanceUltrasonic(TriggerPin : Pin_Id; EchoPin : Pin_Id) return Integer;
+   -- HC-SR04 ultrasonic sensor
+   
+  
+
+end DistanceSensors;

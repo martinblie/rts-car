@@ -1,5 +1,4 @@
 V "GNAT Lib v2021"
-M P W=b
 A -O0
 A -gnatA
 A --RTS=C:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\
@@ -13,18 +12,19 @@ A -march=armv7e-m+fp
 P DB LC TF  SS ZX
 
 RN
+RV NO_DELAY
+RV NO_FIXED_POINT
+RV NO_FLOATING_POINT
 RV NO_IMPLEMENTATION_PRAGMAS
-RV MAX_ENTRY_QUEUE_LENGTH=1+
 
-<<<<<<< Updated upstream
-U main%b		main.adb		9efe88cf NE OO SU
-=======
-U main%b		main.adb		3ed8a58d NE OO SU
+U distancesensors%b	distancesensors.adb	f0e53a7a NE OO PK
 W ada%s			ada.ads			ada.ali
 W ada.real_time%s	a-reatim.adb		a-reatim.ali
->>>>>>> Stashed changes
+Z ada.real_time.delays%s  a-retide.adb		a-retide.ali
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
-W carobject%s		carobject.adb		carobject.ali
+
+U distancesensors%s	distancesensors.ads	7c14a72c EE NE OO PK
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 W microbit%s		microbit.ads		microbit.ali
 W microbit.iosfortasking%s  microbit-iosfortasking.adb  microbit-iosfortasking.ali
 
@@ -33,6 +33,8 @@ D a-except.ads		20220915114402 946f3014 ada.exceptions%s
 D a-finali.ads		20220915114402 bf4f806b ada.finalization%s
 D a-interr.ads		20220915114404 bdf68b51 ada.interrupts%s
 D a-intnam.ads		20220915114404 543e27b6 ada.interrupts.names%s
+D a-reatim.ads		20220915114404 cfe92427 ada.real_time%s
+D a-retide.ads		20220915114404 081cdaa4 ada.real_time.delays%s
 D a-stream.ads		20220915114402 119b8fb3 ada.streams%s
 D a-string.ads		20220915114402 90ac6797 ada.strings%s
 D a-sttebu.ads		20220915114402 18209c64 ada.strings.text_buffers%s
@@ -40,49 +42,16 @@ D a-stuten.ads		20220915114402 808c40ad ada.strings.utf_encoding%s
 D a-tags.ads		20220915114402 9eaa38c6 ada.tags%s
 D a-taside.ads		20220915114404 00e3a3f6 ada.task_identification%s
 D a-unccon.ads		20220915114402 0e9b276f ada.unchecked_conversion%s
-<<<<<<< Updated upstream
-D carobject.ads		20220917134002 fb30e1e3 carobject%s
-D hal.ads		20220915114854 2b42c80e hal%s
-D hal-gpio.ads		20220915114854 7f0c2ffe hal.gpio%s
-D hal-i2c.ads		20220915114854 0ed73138 hal.i2c%s
-D hal-spi.ads		20220915114854 fe139819 hal.spi%s
-D hal-uart.ads		20220915114854 d58316b4 hal.uart%s
-D interfac.ads		20220915114402 edec285f interfaces%s
-D main.adb		20220917134028 052efeff main%b
-D microbit.ads		20220915114854 3b54a3e8 microbit%s
-D microbit-iosfortasking.ads  20220915114854 60e097d3 microbit.iosfortasking%s
-D microbit-timewithrtc1.ads  20220915114854 6478704a microbit.timewithrtc1%s
-D nrf.ads		20220915114852 74cf72f5 nrf%s
-D nrf-device.ads	20220915114852 9c9916c4 nrf.device%s
-D nrf-gpio.ads		20220915114852 ab6d4598 nrf.gpio%s
-D nrf-rtc.ads		20220915114852 36d88130 nrf.rtc%s
-D nrf-spi_master.ads	20220915114852 a8ff49a3 nrf.spi_master%s
-D nrf-timers.ads	20220915114852 385f1a57 nrf.timers%s
-D nrf-twi.ads		20220915114852 4881713f nrf.twi%s
-D nrf-uart.ads		20220915114852 9fa4b8b9 nrf.uart%s
-D nrf_svd.ads		20220915114852 87ba21d7 nrf_svd%s
-D nrf_svd-rtc.ads	20220915114852 57c7ffc8 nrf_svd.rtc%s
-D nrf_svd-spi.ads	20220915114852 6e2ffb69 nrf_svd.spi%s
-D nrf_svd-timer.ads	20220915114852 ba50db1c nrf_svd.timer%s
-D nrf_svd-twi.ads	20220915114852 68301534 nrf_svd.twi%s
-D nrf_svd-uart.ads	20220915114852 83bcebc8 nrf_svd.uart%s
-=======
-D brain.ads		20221108203418 9e601b56 brain%s
-D carobject.ads		20221108185814 8ceebf3b carobject%s
 D distancesensors.ads	20221029185728 33fed8de distancesensors%s
+D distancesensors.adb	20221108182428 0cf2c683 distancesensors%b
 D hal.ads		20221013104122 2b42c80e hal%s
 D hal-gpio.ads		20221013104122 7f0c2ffe hal.gpio%s
 D hal-i2c.ads		20221013104122 0ed73138 hal.i2c%s
 D hal-spi.ads		20221013104122 fe139819 hal.spi%s
 D hal-uart.ads		20221013104122 d58316b4 hal.uart%s
 D interfac.ads		20220915114402 edec285f interfaces%s
-D main.adb		20221029185728 f49b09c2 main%b
 D microbit.ads		20221013104122 3b54a3e8 microbit%s
-D microbit-console.ads	20221013104122 0bb00661 microbit.console%s
 D microbit-iosfortasking.ads  20221103103752 4fea7ff2 microbit.iosfortasking%s
-D microbit-servos.ads	20221013104122 3dc96590 microbit.servos%s
-D microbit-timewithrtc1.ads  20221013104122 6478704a microbit.timewithrtc1%s
-D motorcontroller.ads	20221029185728 2f6af2ba motorcontroller%s
 D nrf.ads		20221013104120 74cf72f5 nrf%s
 D nrf-device.ads	20221013104120 9c9916c4 nrf.device%s
 D nrf-gpio.ads		20221013104120 ab6d4598 nrf.gpio%s
@@ -97,7 +66,6 @@ D nrf_svd-spi.ads	20221013104122 6e2ffb69 nrf_svd.spi%s
 D nrf_svd-timer.ads	20221013104122 ba50db1c nrf_svd.timer%s
 D nrf_svd-twi.ads	20221013104122 68301534 nrf_svd.twi%s
 D nrf_svd-uart.ads	20221013104122 83bcebc8 nrf_svd.uart%s
->>>>>>> Stashed changes
 D system.ads		20220915114404 ad54c63c system%s
 D s-bb.ads		20220915114402 09e072ae system.bb%s
 D s-bbbopa.ads		20220915114404 f68efaf0 system.bb.board_parameters%s
@@ -131,53 +99,60 @@ D s-taskin.ads		20220915114404 989d56fd system.tasking%s
 D s-taprob.ads		20220915114404 c8fc0753 system.tasking.protected_objects%s
 D s-traent.ads		20220915114404 26a8d361 system.traceback_entries%s
 D s-unstyp.ads		20220915114402 2b077493 system.unsigned_types%s
-D ultrasonic.ads	20221108181704 8d4531d4 ultrasonic%s
 D unchconv.ads		20220915114402 ca2f9e18 unchecked_conversion%s
 G a e
-<<<<<<< Updated upstream
-G c Z b b [main standard 4 11 none]
-G r p none [main standard 4 11 none] [setdirectionlb carobject__car 16 17 none]
-G r p none [main standard 4 11 none] [setspeedleft carobject__car 25 17 none]
-G r c none [main standard 4 11 none] [set microbit__iosfortasking 22 14 none]
-X 13 carobject.ads
-5K9*CarObject 78e14 20|1w6 1r21
-10n7*Stop{7E9} 20|9r26
-12w14*Car 20|9r7 10r7
-16U17 SetDirectionLB 20|9s11
-25U17 SetSpeedLeft 20|10s11
-X 15 hal-gpio.ads
-=======
-G c Z b b [main standard 8 11 none]
+G c Z s b [getdistanceultrasonic distancesensors 5 13 none]
+G r c none [getdistanceultrasonic distancesensors 5 13 none] [set microbit__iosfortasking 22 14 none]
+G r c none [getdistanceultrasonic distancesensors 5 13 none] [set microbit__iosfortasking 25 13 none]
 X 1 ada.ads
-16K9*Ada 20e8 23|4r6
+16K9*Ada 20e8 16|1r6 1r25 13r20 14r21 22r21 23r20 23r42 25r22 30r13 30r50
+. 35r22 39r13 39r50 46r23 48r16 48r52 54r21 54r47
 X 6 a-reatim.ads
-40K13*Real_Time 181e18 23|4w10
-X 14 brain.ads
-1K9*Brain 10e10 23|6w6
-X 15 carobject.ads
-6K9*CarObject 92e14 23|1w6 1r21
-X 16 distancesensors.ads
-3K9*DistanceSensors 10e20 23|3w6 3r27
+40K13*Real_Time 181e18 16|1w10 1r29 13r24 14r25 22r25 23r24 23r46 25r26 30r17
+. 30r54 35r26 39r17 39r54 46r27 48r20 48r56 54r25 54r51
+50M9*Time<49|46M9> 16|13r34 14r35
+60I9*Time_Span<49|81I9>
+67V13*Clock{50M9}<49|134p13> 16|22s35 23s34 25s36 30s27 35s36 39s27 46s37
+. 48s30 54s61
+71V14*"+"{50M9} 16|23s40 30s48 39s48 48s50
+75V14*"-"{60I9} 16|54s67
+86V14*">"{boolean} 16|30r33 39r33 48r36
+118V13*To_Duration{duration} 16|54s35
+125V13*Microseconds{60I9} 16|23s56
+127V13*Milliseconds{60I9} 16|30s64 39s64 48s66
+X 15 distancesensors.ads
+3K9*DistanceSensors 10l5 10e20 16|3b14 72l5 72t20
+5V13*GetDistanceUltrasonic{integer} 5>35 5>56 16|11b13 62l8 62t29
+5i35 TriggerPin{24|7I9} 16|11b35 21r11 24r11
+5i56 EchoPin{24|7I9} 16|12b36 27r18 29r23 38r17 45r14 47r20
+X 16 distancesensors.adb
+13m7 TimerStart{6|50M9} 22m7 46m9 48r39 54r69
+14m7 Timer2Start{6|50M9} 25m7 30r36 35m7 39r36
+15o7 EchoLength{duration} 54m7 55r41
+16i7 DistanceInMM{integer} 55m10 57r17
+17b7 Tog{boolean} 27m7 29r13
 X 18 hal-gpio.ads
->>>>>>> Stashed changes
 47h9*GPIO_Point
-X 16 hal-i2c.ads
+X 19 hal-i2c.ads
 48h9*I2C_Port
-X 17 hal-spi.ads
+X 20 hal-spi.ads
 48h9*SPI_Port
-X 18 hal-uart.ads
+X 21 hal-uart.ads
 48h9*UART_Port
-X 20 main.adb
-4U11*Main 4b11 20l5 20t9
-X 21 microbit.ads
-58K9*MicroBit 20|2r6 12r7 21|112e13
-X 22 microbit-iosfortasking.ads
-5K18*IOsForTasking 20|2w15 12r16 22|91e27
-22U14*Set 20|12s30
-X 51 s-interr.ads
+X 23 microbit.ads
+58K9*MicroBit 15|1r6 1r34 23|115e13
+X 24 microbit-iosfortasking.ads
+5K18*IOsForTasking 15|1w15 1r43 24|89e27
+7I9*Pin_Id<short_short_integer> 15|5r48 5r66 16|11r48 12r46
+22U14*Set 16|21s7 24s7
+25V13*Set{boolean} 16|27s14 29s19 38s13 45s10 47s16
+X 49 s-bbtime.ads
+46M9*Time
+81I9*Time_Span<long_long_integer>
+X 52 s-interr.ads
 97U14*Install_Restricted_Handlers_Sequential 98i<c,__gnat_attach_all_handlers>22
-X 59 s-secsta.ads
+X 60 s-secsta.ads
 46P9*SS_Stack_Ptr(43R9)
-X 67 s-taskin.ads
-398V13*Get_Sec_Stack{59|46P9} 399i<c,__gnat_get_secondary_stack>22
+X 68 s-taskin.ads
+398V13*Get_Sec_Stack{60|46P9} 399i<c,__gnat_get_secondary_stack>22
 

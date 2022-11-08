@@ -80,11 +80,31 @@ package body CarObject is
          return CurrentSpeedLeft;
       end GetSpeedLeft;
    
+<<<<<<< Updated upstream
       function GetSpeedRight return MicroBit.IOsForTasking.Analog_Value is
       begin
          return CurrentSpeedRight;
       end GetSpeedRight;
    end Car;
+=======
+      
+   protected body ObstacleDistanceFront is
+      procedure Set(Dist : Ultrasonic.Distance_cm) is
+      begin
+         CurrentObstacleDistanceFront := Dist;
+         IsUpdated := True;
+      end Set;
+      entry Get(Var : out Ultrasonic.Distance_cm)
+        when IsUpdated = True is
+         begin
+            Var := CurrentObstacleDistanceFront;
+            IsUpdated := False;
+         end Get;
+   end ObstacleDistanceFront;
+      
+
+
+>>>>>>> Stashed changes
    
    
   

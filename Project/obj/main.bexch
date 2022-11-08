@@ -6,7 +6,16 @@ C:\Users\even1\Documents\git-repos\rts-car\Project\bil.gpr
 C:\Users\even1\Documents\git-repos\Ada_Drivers_Library\boards\MicroBit_v2\microbit_v2_full.gpr
 20220915114854 d831d3b48578409e3ba829329eab733f
 [BOUND OBJECT FILES]
+<<<<<<< Updated upstream
 C:\Users\even1\Documents\git-repos\rts-car\Project\obj\CarObject.o
+=======
+C:\Users\even1\Documents\git-repos\rts-car\Project\obj\distancesensors.o
+C:\Users\even1\Documents\git-repos\rts-car\Project\obj\servocontrol.o
+C:\Users\even1\Documents\git-repos\rts-car\Project\obj\ultrasonic.o
+C:\Users\even1\Documents\git-repos\rts-car\Project\obj\CarObject.o
+C:\Users\even1\Documents\git-repos\rts-car\Project\obj\motorcontroller.o
+C:\Users\even1\Documents\git-repos\rts-car\Project\obj\brain.o
+>>>>>>> Stashed changes
 C:\Users\even1\Documents\git-repos\rts-car\Project\obj\main.o
 [GENERATED SOURCE FILES]
 b__main.ads

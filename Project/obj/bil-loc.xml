@@ -1,0 +1,264 @@
+<?xml version="1.0"?>
+<Locations >
+  <Project >
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\even1\Documents\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\even1\Documents\git-repos\rts-car\Project\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 9" line=" 3" >
+      <vfs_project>C:\Users\even1\Documents\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\even1\Documents\git-repos\rts-car\Project\src\brain.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 34" line=" 38" >
+      <vfs_project>C:\Users\even1\Documents\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\even1\Documents\git-repos\rts-car\Project\src\brain.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 40" line=" 76" >
+      <vfs_project>C:\Users\even1\Documents\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\even1\Documents\git-repos\rts-car\Project\src\CarObject.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 72" >
+      <vfs_project>C:\Users\even1\Documents\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\even1\Documents\git-repos\rts-car\Project\src\CarObject.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 38" line=" 21" >
+      <vfs_project>C:\Users\even1\Documents\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\even1\Documents\git-repos\rts-car\Project\src\motorcontroller.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\even1\Documents\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\even1\Documents\git-repos\rts-car\Project\src\motorcontroller.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 30" >
+      <vfs_project>C:\Users\even1\Documents\git-repos\Ada_Drivers_Library\boards\MicroBit_v2\microbit_v2_full.gpr</vfs_project>
+      <vfs_file>C:\Users\even1\Documents\git-repos\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-iosfortasking.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 34" line=" 324" >
+      <vfs_project>C:\Users\even1\Documents\git-repos\Ada_Drivers_Library\boards\MicroBit_v2\microbit_v2_full.gpr</vfs_project>
+      <vfs_file>C:\Users\even1\Documents\git-repos\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-iosfortasking.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 13" line=" 49" >
+      <vfs_project>C:\Users\even1\Documents\git-repos\Ada_Drivers_Library\boards\MicroBit_v2\microbit_v2_full.gpr</vfs_project>
+      <vfs_file>C:\Users\even1\Documents\git-repos\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf52\nrf-adc.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 136" >
+      <vfs_project>C:\Users\even1\Documents\git-repos\Ada_Drivers_Library\boards\MicroBit_v2\microbit_v2_full.gpr</vfs_project>
+      <vfs_file>C:\Users\even1\Documents\git-repos\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf52\nrf-adc.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 17" line=" 9" >
+      <vfs_project>C:\Users\even1\Documents\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\even1\Documents\git-repos\rts-car\Project\src\servocontrol.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\even1\Documents\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\even1\Documents\git-repos\rts-car\Project\src\CarObject.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\even1\Documents\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\even1\Documents\git-repos\rts-car\Project\src\CarObject.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\even1\Documents\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\even1\Documents\git-repos\rts-car\Project\src\CarObject.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\even1\Documents\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\even1\Documents\git-repos\rts-car\Project\src\servocontrol.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 12" >
+      <vfs_project>C:\Users\even1\Documents\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\even1\Documents\git-repos\rts-car\Project\src\servocontrol.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\even1\Documents\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\even1\Documents\git-repos\rts-car\Project\src\distancesensors.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\even1\Documents\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\even1\Documents\git-repos\rts-car\Project\src\distancesensors.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\even1\Documents\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\even1\Documents\git-repos\rts-car\Project\src\CarObject.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\even1\Documents\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\even1\Documents\git-repos\rts-car\Project\src\brain.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\even1\Documents\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\even1\Documents\git-repos\rts-car\Project\src\brain.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\even1\Documents\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\even1\Documents\git-repos\rts-car\Project\src\servocontrol.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\even1\Documents\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\even1\Documents\git-repos\rts-car\Project\src\motorcontroller.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\even1\Documents\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\even1\Documents\git-repos\rts-car\Project\src\CarObject.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\even1\Documents\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\even1\Documents\git-repos\rts-car\Project\src\brain.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\even1\Documents\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\even1\Documents\git-repos\rts-car\Project\src\servocontrol.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\even1\Documents\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\even1\Documents\git-repos\rts-car\Project\src\brain.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 13" line=" 86" >
+      <vfs_project>C:\Users\even1\Documents\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\even1\Documents\git-repos\rts-car\Project\src\brain.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 42" line=" 82" >
+      <vfs_project>C:\Users\even1\Documents\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\even1\Documents\git-repos\rts-car\Project\src\brain.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\even1\Documents\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\even1\Documents\git-repos\rts-car\Project\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\even1\Documents\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\even1\Documents\git-repos\rts-car\Project\src\distancesensors.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\even1\Documents\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\even1\Documents\git-repos\rts-car\Project\src\brain.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\even1\Documents\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\even1\Documents\git-repos\rts-car\Project\src\brain.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\even1\Documents\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\even1\Documents\git-repos\rts-car\Project\src\CarObject.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\even1\Documents\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\even1\Documents\git-repos\rts-car\Project\src\brain.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\even1\Documents\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\even1\Documents\git-repos\rts-car\Project\src\servocontrol.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\even1\Documents\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\even1\Documents\git-repos\rts-car\Project\src\brain.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\even1\Documents\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\even1\Documents\git-repos\rts-car\Project\src\servocontrol.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\even1\Documents\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\even1\Documents\git-repos\rts-car\Project\src\brain.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\even1\Documents\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\even1\Documents\git-repos\rts-car\Project\src\servocontrol.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\even1\Documents\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\even1\Documents\git-repos\rts-car\Project\src\brain.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 17" line=" 65" >
+      <vfs_project>C:\Users\even1\Documents\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\even1\Documents\git-repos\rts-car\Project\src\brain.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 45" >
+      <vfs_project>C:\Users\even1\Documents\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\even1\Documents\git-repos\rts-car\Project\src\brain.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\even1\Documents\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\even1\Documents\git-repos\rts-car\Project\src\distancesensors.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\even1\Documents\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\even1\Documents\git-repos\rts-car\Project\src\brain.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 3" >
+      <vfs_project>C:\Users\even1\Documents\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\even1\Documents\git-repos\rts-car\Project\src\ultrasonic.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 4" line=" 3" >
+      <vfs_project>C:\Users\even1\Documents\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file>C:\Users\even1\Documents\git-repos\rts-car\Project\src\ultrasonic.ads</vfs_file>
+    </file_marker>
+  </Project>
+  <Project >
+    <vfs_file >D:\git-repos\rts-car\Project\bil.gpr</vfs_file>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project  />
+      <vfs_file >D:\git-repos\rts-car\Project\bil.gpr</vfs_file>
+    </file_marker>
+    <file_marker column=" 30" line=" 57">
+      <vfs_project >D:\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file >D:\git-repos\rts-car\Project\src\distancesensors.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 88" line=" 5">
+      <vfs_project >D:\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file >D:\git-repos\rts-car\Project\src\distancesensors.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 41" line=" 16">
+      <vfs_project >D:\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file >D:\git-repos\rts-car\Project\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 64" line=" 120">
+      <vfs_project >D:\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file >D:\GNAT\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\gnarl\a-reatim.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 28" line=" 57">
+      <vfs_project >D:\git-repos\Ada_Drivers_Library\boards\MicroBit_v2\microbit_v2_full.gpr</vfs_project>
+      <vfs_file >D:\git-repos\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-interrupts.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 32">
+      <vfs_project >D:\git-repos\Ada_Drivers_Library\boards\MicroBit_v2\microbit_v2_full.gpr</vfs_project>
+      <vfs_file >D:\git-repos\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf52\nrf-interrupts.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 22" line=" 48">
+      <vfs_project >D:\git-repos\Ada_Drivers_Library\boards\MicroBit_v2\microbit_v2_full.gpr</vfs_project>
+      <vfs_file >D:\git-repos\Ada_Drivers_Library\arch\ARM\cortex_m\src\nvic_cm4_cm7\cortex_m-nvic.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 23" line=" 34">
+      <vfs_project >D:\git-repos\Ada_Drivers_Library\boards\MicroBit_v2\microbit_v2_full.gpr</vfs_project>
+      <vfs_file >D:\git-repos\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio-tasks_and_events.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 18" line=" 112">
+      <vfs_project >D:\git-repos\Ada_Drivers_Library\boards\MicroBit_v2\microbit_v2_full.gpr</vfs_project>
+      <vfs_file >D:\git-repos\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-gpio-tasks_and_events.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 5">
+      <vfs_project >D:\git-repos\Ada_Drivers_Library\boards\MicroBit_v2\microbit_v2_full.gpr</vfs_project>
+      <vfs_file >D:\git-repos\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >D:\git-repos\Ada_Drivers_Library\boards\MicroBit_v2\microbit_v2_full.gpr</vfs_project>
+      <vfs_file >D:\git-repos\Ada_Drivers_Library\boards\MicroBit_v2\src\full\microbit-radio.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 11">
+      <vfs_project >D:\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file >D:\git-repos\rts-car\Project\src\distancesensors.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >D:\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file >D:\git-repos\rts-car\Project\src\CarObject.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >D:\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file >D:\git-repos\rts-car\Project\src\distancesensors.ads</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 1">
+      <vfs_project >D:\git-repos\rts-car\Project\bil.gpr</vfs_project>
+      <vfs_file >D:\git-repos\rts-car\Project\src\distancesensors.adb</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>

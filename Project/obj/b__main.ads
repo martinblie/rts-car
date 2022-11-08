@@ -68,14 +68,20 @@ package ada_main is
    --  system.traceback_entries%b
    --  system.unsigned_types%s
    --  interfaces.nrf52.rtc%s
+   --  system.img_uns%s
+   --  system.img_util%s
+   --  system.img_util%b
    --  system.wch_con%s
    --  system.wch_con%b
    --  system.wch_jis%s
    --  system.wch_jis%b
    --  system.wch_cnv%s
    --  system.wch_cnv%b
+   --  ada.text_io%s
+   --  ada.text_io%b
    --  system.address_image%s
    --  system.address_image%b
+   --  system.exn_lli%s
    --  system.traceback%s
    --  system.traceback%b
    --  ada.strings.utf_encoding%s
@@ -153,12 +159,15 @@ package ada_main is
    --  ada.assertions%b
    --  ada.streams%s
    --  ada.streams%b
+   --  system.arith_64%s
+   --  system.arith_64%b
    --  system.fat_flt%s
    --  system.fat_lflt%s
    --  system.fat_llf%s
    --  system.finalization_root%s
    --  system.finalization_root%b
    --  ada.finalization%s
+   --  system.img_fixed_64%s
    --  system.storage_pools%s
    --  system.storage_pools%b
    --  system.finalization_masters%s
@@ -169,6 +178,8 @@ package ada_main is
    --  system.stream_attributes%b
    --  system.assertions%s
    --  system.assertions%b
+   --  system.bb.execution_time%s
+   --  system.bb.execution_time%b
    --  system.pool_global%s
    --  system.pool_global%b
    --  system.tasking.protected_objects%s
@@ -178,6 +189,8 @@ package ada_main is
    --  system.tasking.restricted.stages%b
    --  ada.task_identification%s
    --  ada.task_identification%b
+   --  ada.execution_time%s
+   --  ada.execution_time%b
    --  system.interrupts%s
    --  system.interrupts%b
    --  ada.interrupts%s
@@ -248,10 +261,30 @@ package ada_main is
    --  microbit%s
    --  microbit.iosfortasking%s
    --  microbit.iosfortasking%b
+<<<<<<< Updated upstream
+=======
+   --  distancesensors%s
+   --  distancesensors%b
+   --  microbit.servos%s
+   --  microbit.servos%b
+   --  microbit.timehighspeed%s
+   --  microbit.timehighspeed%b
+>>>>>>> Stashed changes
    --  microbit.timewithrtc1%s
    --  microbit.timewithrtc1%b
+   --  servocontrol%s
+   --  servocontrol%b
+   --  ultrasonic%s
+   --  ultrasonic%b
    --  carobject%s
    --  carobject%b
+<<<<<<< Updated upstream
+=======
+   --  motorcontroller%s
+   --  motorcontroller%b
+   --  brain%s
+   --  brain%b
+>>>>>>> Stashed changes
    --  main%b
    --  END ELABORATION ORDER
 
