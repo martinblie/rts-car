@@ -1,6 +1,7 @@
 
 with MicroBit.Console;
-with Brain2;
+with Brain4;
+with MicroBit.Accelerometer;
 
 procedure Main with Priority => 0 is
 

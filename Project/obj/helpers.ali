@@ -1,0 +1,170 @@
+V "GNAT Lib v2021"
+A -O0
+A -gnatA
+A --RTS=D:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\
+A -mlittle-endian
+A -mthumb
+A -mfloat-abi=hard
+A -mfpu=fpv4-sp-d16
+A -mcpu=cortex-m4
+A -g
+A -march=armv7e-m+fp
+P DB SS ZX
+
+RN
+RV NO_FIXED_POINT
+RV NO_FLOATING_POINT
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U helpers%b		helpers.adb		2a3af4fb NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.elementary_functions%s  a-nuelfu.ads  a-nuelfu.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W microbit%s		microbit.ads		microbit.ali
+W microbit.console%s	microbit-console.adb	microbit-console.ali
+W system%s		system.ads		system.ali
+Z system.img_flt%s	s-imgflt.ads		s-imgflt.ali
+W system.libm_single%s	s-libsin.adb		s-libsin.ali
+
+U helpers%s		helpers.ads		618ae7d8 EE NE OO PK
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W hal%s			hal.ads			hal.ali
+
+D ada.ads		20220916121808 76789da1 ada%s
+D a-except.ads		20220916121810 946f3014 ada.exceptions%s
+D a-finali.ads		20220916121810 bf4f806b ada.finalization%s
+D a-numeri.ads		20220916121808 84bea7a3 ada.numerics%s
+D a-nuelfu.ads		20220916121808 51c3d5d5 ada.numerics.elementary_functions%s
+D a-stream.ads		20220916121810 119b8fb3 ada.streams%s
+D a-string.ads		20220916121810 90ac6797 ada.strings%s
+D a-sttebu.ads		20220916121810 18209c64 ada.strings.text_buffers%s
+D a-stuten.ads		20220916121810 808c40ad ada.strings.utf_encoding%s
+D a-tags.ads		20220916121810 9eaa38c6 ada.tags%s
+D a-unccon.ads		20220916121808 0e9b276f ada.unchecked_conversion%s
+D hal.ads		20220916121916 2b42c80e hal%s
+D hal-gpio.ads		20220916121916 7f0c2ffe hal.gpio%s
+D hal-i2c.ads		20220916121916 0ed73138 hal.i2c%s
+D hal-spi.ads		20220916121916 fe139819 hal.spi%s
+D hal-uart.ads		20220916121916 d58316b4 hal.uart%s
+D helpers.ads		20221108145958 4ac82fd6 helpers%s
+D helpers.adb		20221108145958 ce4f0fa6 helpers%b
+D interfac.ads		20220916121808 edec285f interfaces%s
+D microbit.ads		20221021100114 3b54a3e8 microbit%s
+D microbit-console.ads	20220916121916 0bb00661 microbit.console%s
+D nrf.ads		20220916121916 74cf72f5 nrf%s
+D nrf-device.ads	20220916121916 9c9916c4 nrf.device%s
+D nrf-gpio.ads		20220916121916 ab6d4598 nrf.gpio%s
+D nrf-rtc.ads		20220916121916 36d88130 nrf.rtc%s
+D nrf-spi_master.ads	20220916121916 a8ff49a3 nrf.spi_master%s
+D nrf-timers.ads	20221021100114 15fa58e3 nrf.timers%s
+D nrf-twi.ads		20220916121916 4881713f nrf.twi%s
+D nrf-uart.ads		20220916121916 9fa4b8b9 nrf.uart%s
+D nrf_svd.ads		20220916121916 87ba21d7 nrf_svd%s
+D nrf_svd-rtc.ads	20220916121916 57c7ffc8 nrf_svd.rtc%s
+D nrf_svd-spi.ads	20220916121916 6e2ffb69 nrf_svd.spi%s
+D nrf_svd-timer.ads	20220916121916 ba50db1c nrf_svd.timer%s
+D nrf_svd-twi.ads	20220916121916 68301534 nrf_svd.twi%s
+D nrf_svd-uart.ads	20220916121916 83bcebc8 nrf_svd.uart%s
+D system.ads		20220916121814 ad54c63c system%s
+D s-finmas.ads		20220916121812 1ab4dba8 system.finalization_masters%s
+D s-finroo.ads		20220916121812 4ff27390 system.finalization_root%s
+D s-gcmain.ads		20220916121808 f623c353 system.generic_c_math_interface%s
+D s-imager.ads		20220916121810 500b11a9 system.image_r%s
+D s-imageu.ads		20220916121808 525c30c6 system.image_u%s
+D s-imgflt.ads		20220916121810 78689de8 system.img_flt%s
+D s-imguns.ads		20220916121808 0e4da2ac system.img_uns%s
+D s-libpre.ads		20220916121808 f93cda94 system.libm_prefix%s
+D s-libsin.ads		20220916121808 7070a09c system.libm_single%s
+D s-parame.ads		20220916121814 8e90778f system.parameters%s
+D s-pooglo.ads		20220916121812 ede33ef8 system.pool_global%s
+D s-powflt.ads		20220916121808 46f7a1b9 system.powten_flt%s
+D s-putima.ads		20220916121812 4e095881 system.put_images%s
+D s-secsta.ads		20220916121808 56a2861c system.secondary_stack%s
+D s-stalib.ads		20220916121812 472fbca8 system.standard_library%s
+D s-stoele.ads		20220916121808 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20220916121808 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20220916121812 e9fa2dd8 system.storage_pools%s
+D s-stratt.ads		20220916121810 7bdda3fa system.stream_attributes%s
+D s-traent.ads		20220916121812 26a8d361 system.traceback_entries%s
+D s-unstyp.ads		20220916121808 2b077493 system.unsigned_types%s
+D unchconv.ads		20220916121808 ca2f9e18 unchecked_conversion%s
+G a e
+G c Z s b [remaprange helpers 7 13 none]
+G c Z s b [getjoystickangleandmagnitude helpers 12 14 none]
+G c Z s b [anglesolver helpers 17 13 none]
+G c Z s b [angleadder helpers 20 13 none]
+G c Z s b [anglesubtracter helpers 22 13 none]
+G r c none [getjoystickangleandmagnitude helpers 12 14 none] [put_line microbit__console 43 14 none]
+X 1 ada.ads
+16K9*Ada 20e8 18|1r6 1r24 2r6 3r5
+X 4 a-numeri.ads
+16K13*Numerics 35e17 18|1w10 1r28 2r10 3r9
+21N4*Pi 18|49r37 61r17 64r18 64r24 72r18 75r17 75r31
+X 5 a-nuelfu.ads
+41K22*Elementary_Functions[39|86] 18|2w19 3r18
+X 12 hal.ads
+34K9*HAL 166e8 17|1w6 1r15
+53M9*UInt8<19|68M9> 17|12r51 13r50 18|21r51 22r55
+X 13 hal-gpio.ads
+47h9*GPIO_Point
+X 14 hal-i2c.ads
+48h9*I2C_Port
+X 15 hal-spi.ads
+48h9*SPI_Port
+X 16 hal-uart.ads
+48h9*UART_Port
+X 17 helpers.ads
+3K9*Helpers 26l5 26e12 18|7b14 86l5 86t12
+5O9*MagnitudeValue
+7V13*RemapRange{float} 7>24 7>39 7>57 8>24 8>43 18|9b13 15l8 15t18 30s17
+. 31s17
+7f24 input{float} 18|9b24 14r36
+7f39 inputMin{float} 18|9b39 13r54 14r44
+7f57 inputMax{float} 18|9b57 13r43
+8f24 outputMin{float} 18|10b24 13r29 14r14
+8f43 outputMax{float} 18|10b43 13r17
+12U14*GetJoystickAngleAndMagnitude 12>43 13>42 14<42 15<42 18|21b14 40l8
+. 40t36
+12m43 xAxis{12|53M9} 18|21b43 28r23
+13m42 yAxis{12|53M9} 18|22b47 29r23
+14f42 angle{float} 18|23b47 34m7
+15f42 magnitude{float} 18|24b47 35m7 36r10 37m10
+17V13*AngleSolver{float} 17>25 18>25 18>43 18|42b13 55l8 55t19
+17f25 ServoAngle{float} 18|42b25 49r24
+18f25 leftDist{float} 18|43b25 50r53 50r62 51r37 53r61
+18f43 rightDist{float} 18|43b43 50r29 50r39 51r48 53r48
+20V13*AngleAdder{float} 20>24 20>40 18|57b13 66l8 66t18
+20f24 angle1{float} 18|57b24 60r14
+20f40 angle2{float} 18|57b40 60r23
+22V13*AngleSubtracter{float} 22>29 22>45 18|68b13 77l8 77t23
+22f29 angle1{float} 18|68b29 71r14
+22f45 angle2{float} 18|68b45 71r23
+X 18 helpers.adb
+11f7 slope{float} 13m7 14r27
+25f7 xValue{float} 28m7 30m7 30r28 32r37 34r49 35r26 35r33
+26f7 yValue{float} 29m7 31m7 31r28 33r37 34r41 35r44 35r51
+45f7 servoRadians{float} 49m7 51r64 53r32
+46f7 oppositeDist{float} 50m7
+47f7 leftAngle{float} 53m7 54r14
+58f7 sum{float} 60m7 61r10 62r17 64r30
+69f7 sum{float} 71m7 72r10 73r17 75r24
+X 19 interfac.ads
+68M9*Unsigned_8
+X 20 microbit.ads
+58K9*MicroBit 18|5r6 5r28 20|115e13
+X 21 microbit-console.ads
+32K18*Console 18|5w15 5r37 21|49e21
+43U14*Put_Line 18|32s7 33s7
+X 36 system.ads
+50K9*System 18|4r6 34r16 36|164e11
+X 39 s-gcmain.ads
+93V13*Sqrt{float} 18|35s20[5|41] 50s23[5|41]
+113V13*Sin{float} 18|53s28[5|41]
+121V13*Cos{float} 18|51s60[5|41]
+154V13*Arccos{float} 18|53s20[5|41]
+X 45 s-libsin.ads
+40K16*Libm_Single 18|4w13 34r23 45|535e23
+186V13*Atan2{float} 18|34s35
+

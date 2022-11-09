@@ -27,7 +27,7 @@ package body DistanceSensors is
       Tog := Set(EchoPin);
       
       while Tog = Set(EchoPin) loop
-         if Ada.Real_Time.Clock > (Timer2Start + Ada.Real_Time.Milliseconds(5)) then
+         if Ada.Real_Time.Clock > (Timer2Start + Ada.Real_Time.Milliseconds(25)) then
             return -1;
          end if;
       end loop;
@@ -36,7 +36,7 @@ package body DistanceSensors is
       
       
       while Set(EchoPin) = False loop
-         if Ada.Real_Time.Clock > (Timer2Start + Ada.Real_Time.Milliseconds(5)) then
+         if Ada.Real_Time.Clock > (Timer2Start + Ada.Real_Time.Milliseconds(25)) then
             return -1;
          end if;
          
@@ -45,7 +45,7 @@ package body DistanceSensors is
       if Set(EchoPin) = True then
         TimerStart := Ada.Real_Time.Clock;
          while Set(EchoPin) = True loop
-            if Ada.Real_Time.Clock > (TimerStart + Ada.Real_Time.Milliseconds(5)) then
+            if Ada.Real_Time.Clock > (TimerStart + Ada.Real_Time.Milliseconds(25)) then
                return -1;
             end if;
          end loop;

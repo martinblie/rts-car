@@ -1,25 +1,28 @@
 [GENERATED OBJECT FILE]
 b__main.o
 [PROJECT FILES]
-C:\Users\Martinsen\Documents\git-repos\rts-car\Project\bil.gpr
-20220929105016 279423d19b95493b5926e7eaa21618ba
-C:\Users\Martinsen\Documents\git-repos\Ada_Drivers_Library\boards\MicroBit_v2\microbit_v2_full.gpr
-20220915115332 d83950f94311e02663a6686cf6853403
+D:\git-repos\rts-car\Project\bil.gpr
+20220916204050 4266b7546df22361076ec819eef6cba6
+D:\git-repos\Ada_Drivers_Library\boards\MicroBit_v2\microbit_v2_full.gpr
+20220916121916 b8158fbacb7c2d258144aded24269a63
 [BOUND OBJECT FILES]
-C:\Users\Martinsen\Documents\git-repos\rts-car\Project\obj\CarObject.o
-C:\Users\Martinsen\Documents\git-repos\rts-car\Project\obj\motorcontroller.o
-C:\Users\Martinsen\Documents\git-repos\rts-car\Project\obj\brain2.o
-C:\Users\Martinsen\Documents\git-repos\rts-car\Project\obj\main.o
+D:\git-repos\rts-car\Project\obj\distancesensors.o
+D:\git-repos\rts-car\Project\obj\CarObject.o
+D:\git-repos\rts-car\Project\obj\motorcontroller.o
+D:\git-repos\rts-car\Project\obj\servocontrol.o
+D:\git-repos\rts-car\Project\obj\ultrasonic.o
+D:\git-repos\rts-car\Project\obj\brain4.o
+D:\git-repos\rts-car\Project\obj\main.o
 [GENERATED SOURCE FILES]
 b__main.ads
 b__main.adb
 b__main.ali
 [RESULTING OPTIONS]
--LC:\Users\Martinsen\Documents\git-repos\rts-car\Project\obj\
--LC:\Users\Martinsen\Documents\git-repos\rts-car\Project\obj\
--LC:\Users\Martinsen\Documents\git-repos\Ada_Drivers_Library\boards\MicroBit_v2\obj\full_lib_Debug\
--LC:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\adalib\
+-LD:\git-repos\rts-car\Project\obj\
+-LD:\git-repos\rts-car\Project\obj\
+-LD:\git-repos\Ada_Drivers_Library\boards\MicroBit_v2\obj\full_lib_Debug\
+-LD:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\adalib\
 -static
 -static-libgcc
-C:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\adalib\libgnarl.a
-C:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\adalib\libgnat.a
+D:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\adalib\libgnarl.a
+D:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\adalib\libgnat.a

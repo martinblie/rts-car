@@ -12,15 +12,15 @@ package CarObject is
       PwmLeft : MicroBit.IOsForTasking.Pin_Id := 1;
       PwmRight : MicroBit.IOsForTasking.Pin_Id := 10;
       PwmServo : MicroBit.Servos.Servo_Pin_Id := 0;
-      Dir1LB : MicroBit.IOsForTasking.Pin_Id := 2; -- black
-      Dir2LB : MicroBit.IOsForTasking.Pin_Id := 3; -- white
-      Dir1RB : MicroBit.IOsForTasking.Pin_Id := 14; -- red
-      Dir2RB : MicroBit.IOsForTasking.Pin_Id := 15; -- brown
-      Dir1LF : MicroBit.IOsForTasking.Pin_Id := 6; -- grey
-      Dir2LF : MicroBit.IOsForTasking.Pin_Id := 7; -- purple
-      Dir1RF : MicroBit.IOsForTasking.Pin_Id := 12; -- yellow
-      Dir2RF : MicroBit.IOsForTasking.Pin_Id := 13; -- orange
-      Ultrasonic1Trigger : MicroBit.IOsForTasking.Pin_Id := 10; -- orange
+      Dir1LB : MicroBit.IOsForTasking.Pin_Id := 3; -- black
+      Dir2LB : MicroBit.IOsForTasking.Pin_Id := 2; -- white
+      Dir1RB : MicroBit.IOsForTasking.Pin_Id := 15; -- red
+      Dir2RB : MicroBit.IOsForTasking.Pin_Id := 14; -- brown
+      Dir1LF : MicroBit.IOsForTasking.Pin_Id := 7; -- grey
+      Dir2LF : MicroBit.IOsForTasking.Pin_Id := 6; -- purple
+      Dir1RF : MicroBit.IOsForTasking.Pin_Id := 13; -- yellow
+      Dir2RF : MicroBit.IOsForTasking.Pin_Id := 12; -- orange
+      Ultrasonic1Trigger : MicroBit.IOsForTasking.Pin_Id := 19; -- orange
       Ultrasonic1Echo : MicroBit.IOsForTasking.Pin_Id := 11; --yellow
    end record;
    Pins : PinRecord;

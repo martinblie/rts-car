@@ -104,7 +104,6 @@ package body Brain2 is
 
          end if;
          
-         if payloadData(3) = 1 then
             
         
                

@@ -1,12 +1,20 @@
 with CarObject; use CarObject;
-with MicroBit.IOsForTasking;
+with MicroBit.IOsForTasking; use MicroBit.IOsForTasking;
 package MotorController is
 
-   procedure SetDirection(Pin1 : MicroBit.IOsForTasking.Pin_Id;
-                          Pin2 :MicroBit.IOsForTasking.Pin_Id;
+   procedure SetDirection(Pin1 : Pin_Id;
+                          Pin2 :Pin_Id;
                           Direction : Dir);
-   procedure SetSpeed(Pin : MicroBit.IOsForTasking.Pin_Id;
-                      Speed : MicroBit.IOsForTasking.Analog_Value);
+   procedure SetSpeed(Pin : Pin_Id;
+                      Speed : Analog_Value);
+   procedure SetSpeed1(Speed : Analog_Value);
+   procedure SetSpeed2(Speed : Analog_Value);
+
    procedure SetDirectionAll(Direction : Dir);
+
+   procedure SetDirectionLB(Direction : Dir);
+   procedure SetDirectionLF(Direction : Dir);
+   procedure SetDirectionRB(Direction : Dir);
+   procedure SetDirectionRF(Direction : Dir);
 
 end MotorController;

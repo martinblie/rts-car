@@ -24,6 +24,18 @@ package body MotorController is
       MicroBit.IOsForTasking.Write(Pin, Speed);
    end SetSpeed;
    
+   procedure SetSpeed1(Speed : Analog_Value) is
+   begin
+      SetSpeed(Pins.PwmLeft, Speed);
+   end SetSpeed1;
+   
+   procedure SetSpeed2(Speed : Analog_Value) is
+   begin
+      SetSpeed(Pins.PwmRight, Speed);
+   end SetSpeed2;
+   
+   
+   
    procedure SetDirectionAll(Direction : Dir) is
    begin
       SetDirection(Pins.Dir1LB, Pins.Dir2LB, Direction);
@@ -31,6 +43,28 @@ package body MotorController is
       SetDirection(Pins.Dir1LF, Pins.Dir2LF, Direction);
       SetDirection(Pins.Dir1RF, Pins.Dir2RF, Direction);
    end SetDirectionAll;
+   
+   
+   procedure SetDirectionLB(Direction : Dir) is
+   begin
+      SetDirection(Pins.Dir1LB, Pins.Dir2LB, Direction);
+   end SetDirectionLB;
+   
+   procedure SetDirectionLF(Direction : Dir) is
+   begin
+      SetDirection(Pins.Dir1LF, Pins.Dir2LF, Direction);
+   end SetDirectionLF;
+   
+   procedure SetDirectionRB(Direction : Dir) is
+   begin
+      SetDirection(Pins.Dir1RB, Pins.Dir2RB, Direction);
+   end SetDirectionRB;
+   
+   procedure SetDirectionRF(Direction : Dir) is
+   begin
+      SetDirection(Pins.Dir1RF, Pins.Dir1RF, Direction);
+   end SetDirectionRF;
+   
    
         
       

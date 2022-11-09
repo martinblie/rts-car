@@ -1,0 +1,2 @@
+brain2.adb:107:27: error: missing "then"
+brain2.adb:126:06: error: missing "end if;" for "if" at line 107

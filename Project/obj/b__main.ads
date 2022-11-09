@@ -41,15 +41,11 @@ package ada_main is
    --  system.bb.mcu_parameters%s
    --  system.bb.parameters%s
    --  system.exceptions%s
-   --  system.float_control%s
-   --  system.float_control%b
    --  system.img_int%s
-   --  system.img_lli%s
    --  system.machine_code%s
    --  machine_code%s
    --  system.parameters%s
    --  system.parameters%b
-   --  system.powten_flt%s
    --  system.restrictions%s
    --  system.restrictions%b
    --  system.storage_elements%s
@@ -83,8 +79,11 @@ package ada_main is
    --  system.wch_jis%b
    --  system.wch_cnv%s
    --  system.wch_cnv%b
+   --  ada.text_io%s
+   --  ada.text_io%b
    --  system.address_image%s
    --  system.address_image%b
+   --  system.exn_lli%s
    --  system.traceback%s
    --  system.traceback%b
    --  ada.strings.utf_encoding%s
@@ -162,13 +161,15 @@ package ada_main is
    --  ada.assertions%b
    --  ada.streams%s
    --  ada.streams%b
+   --  system.arith_64%s
+   --  system.arith_64%b
    --  system.fat_flt%s
    --  system.fat_lflt%s
    --  system.fat_llf%s
    --  system.finalization_root%s
    --  system.finalization_root%b
    --  ada.finalization%s
-   --  system.img_flt%s
+   --  system.img_fixed_64%s
    --  system.storage_pools%s
    --  system.storage_pools%b
    --  system.finalization_masters%s
@@ -183,8 +184,12 @@ package ada_main is
    --  ada.real_time.delays%b
    --  system.assertions%s
    --  system.assertions%b
+   --  system.bb.execution_time%s
+   --  system.bb.execution_time%b
    --  system.pool_global%s
    --  system.pool_global%b
+   --  system.relative_delays%s
+   --  system.relative_delays%b
    --  system.tasking.protected_objects%s
    --  system.tasking.protected_objects%b
    --  system.tasking.protected_objects.entries%s
@@ -200,6 +205,8 @@ package ada_main is
    --  system.tasking.restricted.stages%b
    --  ada.task_identification%s
    --  ada.task_identification%b
+   --  ada.execution_time%s
+   --  ada.execution_time%b
    --  system.interrupts%s
    --  system.interrupts%b
    --  ada.interrupts%s
@@ -235,6 +242,8 @@ package ada_main is
    --  hal.i2c%s
    --  hal.spi%s
    --  hal.uart%s
+   --  lsm303agr%s
+   --  lsm303agr%b
    --  memory_barriers%s
    --  memory_barriers%b
    --  cortex_m.nvic%s
@@ -254,12 +263,12 @@ package ada_main is
    --  nrf.spi_master%b
    --  nrf.tasks%s
    --  nrf.tasks%b
+   --  nrf.adc%s
+   --  nrf.adc%b
    --  nrf.clock%s
    --  nrf.clock%b
    --  nrf.ppi%s
    --  nrf.ppi%b
-   --  nrf.radio%s
-   --  nrf.radio%b
    --  nrf.timers%s
    --  nrf.timers%b
    --  nrf.twi%s
@@ -271,22 +280,30 @@ package ada_main is
    --  microbit%s
    --  microbit.console%s
    --  microbit.console%b
-   --  microbit.radio%s
-   --  microbit.radio%b
-   --  microbit.timewithrtc1%s
-   --  microbit.timewithrtc1%b
-   --  nrf.adc%s
-   --  nrf.adc%b
+   --  microbit.i2c%s
+   --  microbit.i2c%b
+   --  microbit.accelerometer%s
+   --  microbit.accelerometer%b
    --  microbit.iosfortasking%s
    --  microbit.iosfortasking%b
+   --  distancesensors%s
+   --  distancesensors%b
    --  microbit.servos%s
    --  microbit.servos%b
+   --  microbit.timehighspeed%s
+   --  microbit.timehighspeed%b
+   --  microbit.timewithrtc1%s
+   --  microbit.timewithrtc1%b
    --  carobject%s
    --  carobject%b
    --  motorcontroller%s
    --  motorcontroller%b
-   --  brain2%s
-   --  brain2%b
+   --  servocontrol%s
+   --  servocontrol%b
+   --  ultrasonic%s
+   --  ultrasonic%b
+   --  brain4%s
+   --  brain4%b
    --  main%b
    --  END ELABORATION ORDER
 

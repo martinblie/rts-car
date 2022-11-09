@@ -1,0 +1,1 @@
+brain4.adb:15:07: warning: variable "CurrentDist" is read but never assigned [-gnatwv]
