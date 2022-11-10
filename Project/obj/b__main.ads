@@ -79,8 +79,6 @@ package ada_main is
    --  system.wch_jis%b
    --  system.wch_cnv%s
    --  system.wch_cnv%b
-   --  ada.text_io%s
-   --  ada.text_io%b
    --  system.address_image%s
    --  system.address_image%b
    --  system.exn_lli%s
@@ -188,8 +186,6 @@ package ada_main is
    --  system.bb.execution_time%b
    --  system.pool_global%s
    --  system.pool_global%b
-   --  system.relative_delays%s
-   --  system.relative_delays%b
    --  system.tasking.protected_objects%s
    --  system.tasking.protected_objects%b
    --  system.tasking.protected_objects.entries%s
@@ -263,8 +259,6 @@ package ada_main is
    --  nrf.spi_master%b
    --  nrf.tasks%s
    --  nrf.tasks%b
-   --  nrf.adc%s
-   --  nrf.adc%b
    --  nrf.clock%s
    --  nrf.clock%b
    --  nrf.ppi%s
@@ -284,26 +278,24 @@ package ada_main is
    --  microbit.i2c%b
    --  microbit.accelerometer%s
    --  microbit.accelerometer%b
-   --  microbit.iosfortasking%s
-   --  microbit.iosfortasking%b
-   --  distancesensors%s
-   --  distancesensors%b
-   --  microbit.servos%s
-   --  microbit.servos%b
    --  microbit.timehighspeed%s
    --  microbit.timehighspeed%b
    --  microbit.timewithrtc1%s
    --  microbit.timewithrtc1%b
+   --  nrf.adc%s
+   --  nrf.adc%b
+   --  microbit.iosfortasking%s
+   --  microbit.iosfortasking%b
+   --  microbit.servos%s
+   --  microbit.servos%b
    --  carobject%s
    --  carobject%b
    --  motorcontroller%s
    --  motorcontroller%b
-   --  servocontrol%s
-   --  servocontrol%b
    --  ultrasonic%s
    --  ultrasonic%b
-   --  brain4%s
-   --  brain4%b
+   --  brain5%s
+   --  brain5%b
    --  main%b
    --  END ELABORATION ORDER
 

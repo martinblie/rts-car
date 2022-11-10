@@ -62,7 +62,7 @@ package body MotorController is
    
    procedure SetDirectionRF(Direction : Dir) is
    begin
-      SetDirection(Pins.Dir1RF, Pins.Dir1RF, Direction);
+      SetDirection(Pins.Dir1RF, Pins.Dir2RF, Direction);
    end SetDirectionRF;
    
    
