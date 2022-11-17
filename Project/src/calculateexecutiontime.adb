@@ -7,24 +7,24 @@ with MicroBit.Console; use MicroBit.Console;
 with HAL; use HAL;
 with MicroBit.Radio;
 
--- SENSE
--- WORST CASE CPU = 0.008514404
+-- SENSE                                 T = 20
+-- WORST CASE CPU = 0.008514404 @ 100cm, 0.00360174 @ 20cm
 -- AVERAGE (1000 samples) = 0.006096840
 
 -- RECIEVE
--- WORST CASE CPU = 0.000030518
+-- WORST CASE CPU = 0.000030518          T = 8
 -- WORST CASE STOPWATCH = 0.000061035
 --AVERAGE CPU (1000 samples) = 0.000005722
 --AVERAGE STOPWATCH = 0.000013351
 
 -- COMPUTE
--- WORST CASE CPU = 0.000061035 , 0.000091553
+-- WORST CASE CPU = 0.000061035 , 0.000091553    T = 10
 -- WORST CASE STOPWATCH = 0.000091553, 0.000091553
 --AVERAGE CPU (1000 samples) = 0.000031471, 0.000046730
 --AVERAGE STOPWATCH = 0.000039101, 0.000052049
 
 -- ACT
--- WORST CASE CPU = 0.000396729
+-- WORST CASE CPU = 0.000396729             T = 12
 -- WORST CASE STOPWATCH = 0.000396729
 --AVERAGE CPU (1000 samples) = 0.000081062
 --AVERAGE STOPWATCH = 0.000088692
@@ -35,9 +35,10 @@ package body CalculateExecutionTime is
 
    task body CalculateExecution is
     StartTime : Ada.Real_Time.Time;
-      Period : Ada.Real_Time.Time_Span := Ada.Real_Time.Milliseconds(100);
+      Period : Ada.Real_Time.Time_Span := Ada.Real_Time.Milliseconds(20);
       -- put task variables here
-      ActuatorValues : ActuatorData;
+
+      Dist : Distance_cm;
       --measurement variables
       Time_Now_Stopwatch : Time;
       Time_Now_CPU : CPU_Time;
@@ -45,11 +46,11 @@ package body CalculateExecutionTime is
       Elapsed_CPU : Time_Span;
       Worst_Elapsed_CPU : Time_Span;
       Worst_Elapsed_Stopwatch : Time_Span;
-      AmountOfMeasurement: Integer := 1000; -- 1000 for average, 1 for worst case
+      AmountOfMeasurement: Integer := 1; -- 1000 for average, 1 for worst case
    begin
       StartTime := Ada.Real_Time.Clock;
       -- Put task setup stuff here
-      Set_Analog_Period_Us(20000);
+      Ultrasonic.Setup(Pins.Ultrasonic1Trigger, Pins.Ultrasonic1Echo);
       --RadioDataPO.Set((110,50,127,50,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0));
       --ObstacleDistancePO.Set(9);
       -- measurement setup stuff
@@ -64,16 +65,8 @@ package body CalculateExecutionTime is
             Time_Now_Stopwatch := Clock;
             Time_Now_CPU := Clock;
             -- put task looping code here
-            ActuatorValues := ActuatorDataPO.Get;
-         SetDirectionRF(ActuatorValues.dirRF);
-         SetDirectionLF(ActuatorValues.dirLF);
-         SetDirectionLB(ActuatorValues.dirLB);
-         SetDirectionRB(ActuatorValues.dirRB);
-         SetSpeedLeft(ActuatorValues.PwmLeft);
-         SetSpeedRight(ActuatorValues.PwmRight);
-         MicroBit.Servos.Go(Pins.PwmServo, ActuatorValues.ServoAngle);
-         MicroBit.IOsForTasking.Set(2, ActuatorValues.Led1);
-         MicroBit.IOsForTasking.Set(19, ActuatorValues.Led2);
+            Dist := Ultrasonic.Read;
+            ObstacleDistancePO.Set(Dist);
             
             -- measurement looping code
             Elapsed_CPU := Elapsed_CPU + (Clock - Time_Now_CPU);
@@ -95,11 +88,12 @@ package body CalculateExecutionTime is
          end if;
          
 
-         Put_Line ("Average CPU time: " & To_Duration (Elapsed_CPU)'Image & " seconds");
-         Put_Line ("Average Stopwatch time: " & To_Duration (Elapsed_Stopwatch)'Image & " seconds");
-         Put_Line ("Worst CPU time: " & To_Duration (Worst_Elapsed_CPU)'Image & " seconds");
-         Put_Line ("Worst Stopwatch time: " & To_Duration (Worst_Elapsed_Stopwatch)'Image & " seconds");
-         Put_Line("x: " & RadioDataPO.Get(1)'Img);
+         --Put_Line ("Average CPU time: " & To_Duration (Elapsed_CPU)'Image & " seconds");
+         --Put_Line ("Average Stopwatch time: " & To_Duration (Elapsed_Stopwatch)'Image & " seconds");
+         --Put_Line ("Worst CPU time: " & To_Duration (Worst_Elapsed_CPU)'Image & " seconds");
+         --Put_Line ("Worst Stopwatch time: " & To_Duration (Worst_Elapsed_Stopwatch)'Image & " seconds");
+         --Put_Line("x: " & RadioDataPO.Get(1)'Img);
+         Put_Line("Dist: " & Dist'Image);
            
          
          

@@ -20,36 +20,36 @@ package body ada_main is
    E133 : Short_Integer; pragma Import (Ada, E133, "ada__real_time_E");
    E131 : Short_Integer; pragma Import (Ada, E131, "system__bb__execution_time_E");
    E167 : Short_Integer; pragma Import (Ada, E167, "system__pool_global_E");
-   E230 : Short_Integer; pragma Import (Ada, E230, "system__tasking__protected_objects_E");
+   E228 : Short_Integer; pragma Import (Ada, E228, "system__tasking__protected_objects_E");
    E129 : Short_Integer; pragma Import (Ada, E129, "system__tasking__restricted__stages_E");
    E158 : Short_Integer; pragma Import (Ada, E158, "hal__gpio_E");
    E190 : Short_Integer; pragma Import (Ada, E190, "hal__i2c_E");
    E183 : Short_Integer; pragma Import (Ada, E183, "hal__spi_E");
    E194 : Short_Integer; pragma Import (Ada, E194, "hal__uart_E");
-   E203 : Short_Integer; pragma Import (Ada, E203, "memory_barriers_E");
-   E201 : Short_Integer; pragma Import (Ada, E201, "cortex_m__nvic_E");
-   E220 : Short_Integer; pragma Import (Ada, E220, "nrf__events_E");
+   E224 : Short_Integer; pragma Import (Ada, E224, "memory_barriers_E");
+   E222 : Short_Integer; pragma Import (Ada, E222, "cortex_m__nvic_E");
+   E215 : Short_Integer; pragma Import (Ada, E215, "nrf__events_E");
    E149 : Short_Integer; pragma Import (Ada, E149, "nrf__gpio_E");
-   E222 : Short_Integer; pragma Import (Ada, E222, "nrf__gpio__tasks_and_events_E");
-   E224 : Short_Integer; pragma Import (Ada, E224, "nrf__interrupts_E");
+   E217 : Short_Integer; pragma Import (Ada, E217, "nrf__gpio__tasks_and_events_E");
+   E219 : Short_Integer; pragma Import (Ada, E219, "nrf__interrupts_E");
    E178 : Short_Integer; pragma Import (Ada, E178, "nrf__rtc_E");
    E181 : Short_Integer; pragma Import (Ada, E181, "nrf__spi_master_E");
-   E207 : Short_Integer; pragma Import (Ada, E207, "nrf__tasks_E");
-   E205 : Short_Integer; pragma Import (Ada, E205, "nrf__adc_E");
-   E242 : Short_Integer; pragma Import (Ada, E242, "nrf__clock_E");
+   E202 : Short_Integer; pragma Import (Ada, E202, "nrf__tasks_E");
+   E240 : Short_Integer; pragma Import (Ada, E240, "nrf__clock_E");
    E226 : Short_Integer; pragma Import (Ada, E226, "nrf__ppi_E");
-   E240 : Short_Integer; pragma Import (Ada, E240, "nrf__radio_E");
+   E238 : Short_Integer; pragma Import (Ada, E238, "nrf__radio_E");
    E185 : Short_Integer; pragma Import (Ada, E185, "nrf__timers_E");
    E188 : Short_Integer; pragma Import (Ada, E188, "nrf__twi_E");
    E192 : Short_Integer; pragma Import (Ada, E192, "nrf__uart_E");
    E140 : Short_Integer; pragma Import (Ada, E140, "nrf__device_E");
    E196 : Short_Integer; pragma Import (Ada, E196, "microbit__console_E");
+   E235 : Short_Integer; pragma Import (Ada, E235, "microbit__radio_E");
+   E249 : Short_Integer; pragma Import (Ada, E249, "microbit__timehighspeed_E");
+   E200 : Short_Integer; pragma Import (Ada, E200, "nrf__adc_E");
    E198 : Short_Integer; pragma Import (Ada, E198, "microbit__iosfortasking_E");
-   E237 : Short_Integer; pragma Import (Ada, E237, "microbit__radio_E");
-   E244 : Short_Integer; pragma Import (Ada, E244, "microbit__servos_E");
-   E251 : Short_Integer; pragma Import (Ada, E251, "microbit__timehighspeed_E");
-   E249 : Short_Integer; pragma Import (Ada, E249, "ultrasonic_E");
-   E246 : Short_Integer; pragma Import (Ada, E246, "motorcontroller_E");
+   E242 : Short_Integer; pragma Import (Ada, E242, "microbit__servos_E");
+   E247 : Short_Integer; pragma Import (Ada, E247, "ultrasonic_E");
+   E244 : Short_Integer; pragma Import (Ada, E244, "motorcontroller_E");
    E122 : Short_Integer; pragma Import (Ada, E122, "brain_E");
 
    Sec_Default_Sized_Stacks : array (1 .. 5) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
@@ -174,7 +174,7 @@ package body ada_main is
       System.Pool_Global'Elab_Spec;
       E167 := E167 + 1;
       System.Tasking.Protected_Objects'Elab_Body;
-      E230 := E230 + 1;
+      E228 := E228 + 1;
       System.Tasking.Restricted.Stages'Elab_Body;
       E129 := E129 + 1;
       HAL.GPIO'ELAB_SPEC;
@@ -185,23 +185,22 @@ package body ada_main is
       E183 := E183 + 1;
       HAL.UART'ELAB_SPEC;
       E194 := E194 + 1;
-      E203 := E203 + 1;
-      E201 := E201 + 1;
-      E220 := E220 + 1;
+      E224 := E224 + 1;
+      E222 := E222 + 1;
+      E215 := E215 + 1;
       Nrf.Gpio'Elab_Spec;
       Nrf.Gpio'Elab_Body;
       E149 := E149 + 1;
-      E222 := E222 + 1;
-      E224 := E224 + 1;
+      E217 := E217 + 1;
+      E219 := E219 + 1;
       E178 := E178 + 1;
       Nrf.Spi_Master'Elab_Spec;
       Nrf.Spi_Master'Elab_Body;
       E181 := E181 + 1;
-      E207 := E207 + 1;
-      E205 := E205 + 1;
-      E242 := E242 + 1;
-      E226 := E226 + 1;
+      E202 := E202 + 1;
       E240 := E240 + 1;
+      E226 := E226 + 1;
+      E238 := E238 + 1;
       Nrf.Timers'Elab_Spec;
       Nrf.Timers'Elab_Body;
       E185 := E185 + 1;
@@ -216,16 +215,17 @@ package body ada_main is
       E140 := E140 + 1;
       Microbit.Console'Elab_Body;
       E196 := E196 + 1;
+      Microbit.Radio'Elab_Spec;
+      E235 := E235 + 1;
+      Microbit.Timehighspeed'Elab_Body;
+      E249 := E249 + 1;
+      E200 := E200 + 1;
       Microbit.Iosfortasking'Elab_Spec;
       Microbit.Iosfortasking'Elab_Body;
       E198 := E198 + 1;
-      Microbit.Radio'Elab_Spec;
-      E237 := E237 + 1;
+      E242 := E242 + 1;
+      E247 := E247 + 1;
       E244 := E244 + 1;
-      Microbit.Timehighspeed'Elab_Body;
-      E251 := E251 + 1;
-      E249 := E249 + 1;
-      E246 := E246 + 1;
       Brain'Elab_Spec;
       Brain'Elab_Body;
       E122 := E122 + 1;
@@ -254,15 +254,15 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   D:\git-repos\rts-car\Project\obj\ultrasonic.o
-   --   D:\git-repos\rts-car\Project\obj\utils.o
-   --   D:\git-repos\rts-car\Project\obj\motorcontroller.o
-   --   D:\git-repos\rts-car\Project\obj\brain.o
-   --   D:\git-repos\rts-car\Project\obj\main.o
-   --   -LD:\git-repos\rts-car\Project\obj\
-   --   -LD:\git-repos\rts-car\Project\obj\
-   --   -LD:\git-repos\Ada_Drivers_Library\boards\MicroBit_v2\obj\full_lib_Debug\
-   --   -LD:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\adalib\
+   --   C:\Users\Martinsen\Documents\git-repos\rts-car\Project\obj\ultrasonic.o
+   --   C:\Users\Martinsen\Documents\git-repos\rts-car\Project\obj\utils.o
+   --   C:\Users\Martinsen\Documents\git-repos\rts-car\Project\obj\motorcontroller.o
+   --   C:\Users\Martinsen\Documents\git-repos\rts-car\Project\obj\brain.o
+   --   C:\Users\Martinsen\Documents\git-repos\rts-car\Project\obj\main.o
+   --   -LC:\Users\Martinsen\Documents\git-repos\rts-car\Project\obj\
+   --   -LC:\Users\Martinsen\Documents\git-repos\rts-car\Project\obj\
+   --   -LC:\Users\Martinsen\Documents\git-repos\Ada_Drivers_Library\boards\MicroBit_v2\obj\full_lib_Debug\
+   --   -LC:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\adalib\
    --   -static
    --   -lgnarl
    --   -lgnat

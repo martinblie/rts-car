@@ -5,12 +5,13 @@ with Ada.Execution_Time; use Ada.Execution_Time;
 with MicroBit.Console; use MicroBit.Console;
 with HAL; use HAL;
 with MicroBit.Radio;
+with Ada.Execution_Time;
 
 package body Brain is
 
    task body Sense is
       StartTime : Ada.Real_Time.Time;
-      Period : Ada.Real_Time.Time_Span := Ada.Real_Time.Milliseconds(32);
+      Period : Ada.Real_Time.Time_Span := Ada.Real_Time.Milliseconds(20);
       Dist : Distance_cm;
    begin
       Ultrasonic.Setup(Pins.Ultrasonic1Trigger, Pins.Ultrasonic1Echo);
@@ -20,8 +21,8 @@ package body Brain is
          delay until StartTime;
          StartTime := StartTime + Period;
 
-         --Dist := Ultrasonic.Read;
-         ObstacleDistancePO.Set(Ultrasonic.Read);
+         Dist := Ultrasonic.Read;
+         ObstacleDistancePO.Set(Dist);
 
       end loop;
    end Sense;
@@ -89,13 +90,13 @@ package body Brain is
    
    task body Compute is
       StartTime : Ada.Real_Time.Time;
-      Period : Ada.Real_Time.Time_Span := Ada.Real_Time.Milliseconds(6);
+      Period : Ada.Real_Time.Time_Span := Ada.Real_Time.Milliseconds(8);
       -- Obstacle avoidance
       Dist : Ultrasonic.Distance_cm := 30;
       DistR : Ultrasonic.Distance_cm := 3;
       DistL : Ultrasonic.Distance_cm := 3;
       ServoInterval1 : Time_Span := Milliseconds(200);
-      ServoInterval2 : Time_Span := Milliseconds(500);
+      ServoInterval2 : Time_Span := Milliseconds(700);
       ServoStart1 : Time;
       ServoStart2 : Time;
       RerouteStart : Time;
@@ -118,14 +119,27 @@ package body Brain is
       BlinkCounter2 : Natural := 0;
       BlinkCounter3 : Natural := 0;
       HasRepeated : Boolean := False;
+      -- Schedule calc
+      --Time_Now_Stopwatch : Time;
+      --Time_Now_CPU : CPU_Time;
+      --Elapsed_Stopwatch : Time_Span;
+      --Elapsed_CPU : Time_Span;
+      --Worst_Elapsed_CPU : Time_Span;
+      --Worst_Elapsed_Stopwatch : Time_Span;
    begin
       --Set_Analog_Period_Us(20000);
       StartTime := Ada.Real_Time.Clock;
       ServoStart1 := Clock;
       LedTimer := Clock;
+      -- Schedule calc
+      --Worst_Elapsed_CPU := Time_Span_Zero;
+      --Worst_Elapsed_Stopwatch := Time_Span_Zero;
       loop
          delay until StartTime;
          StartTime := StartTime + Period;
+         -- Schedule calc
+         --Time_Now_Stopwatch := Clock;
+         --Time_Now_CPU := Clock;
          Dist := ObstacleDistancePO.Get;
          PayloadData := RadioDataPO.Get;
          
@@ -253,7 +267,7 @@ package body Brain is
          ------------------------
          
          case CarState is
-            when Scan => if Dist < 20 then
+            when Scan => if Dist < 19 then
                   CarState := Calculate;
                end if;
                case ServoState is
@@ -469,6 +483,19 @@ package body Brain is
                      
          ActuatorDataPO.Set(ActuatorValues);
          --Put_Line("compute ended");
+         
+         --Elapsed_CPU := (Clock - Time_Now_CPU);
+         --Elapsed_Stopwatch := (Clock - Time_Now_Stopwatch);
+         
+         --  if Elapsed_CPU > Worst_Elapsed_CPU then
+         --     Worst_Elapsed_CPU := Elapsed_CPU;
+         --  end if;
+         --  
+         --  if Elapsed_Stopwatch > Worst_Elapsed_Stopwatch then
+         --     Worst_Elapsed_Stopwatch := Elapsed_Stopwatch;
+         --  end if;
+         --  Put_Line ("Worst CPU time: " & To_Duration (Worst_Elapsed_CPU)'Image & " seconds");
+         --  Put_Line ("Worst Stopwatch time: " & To_Duration (Worst_Elapsed_Stopwatch)'Image & " seconds");
       end loop;
       
    end Compute;
@@ -489,7 +516,7 @@ package body Brain is
          
    task body Act is
       ActuatorValues : ActuatorData;
-      period : Ada.Real_Time.Time_Span := Milliseconds(8);
+      period : Ada.Real_Time.Time_Span := Milliseconds(20);
       startTime : Ada.Real_Time.Time;
    begin
       startTime := Clock;

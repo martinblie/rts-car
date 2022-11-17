@@ -27,10 +27,10 @@ package Brain is
    
    
 
-   task Sense with Priority => 1;
-   task Recieve with Priority => 4;
-   task Compute with Priority => 3;
-   task Act with Priority => 2;
+   task Sense with Priority => 4;
+   task Recieve with Priority => 3;
+   task Compute with Priority => 2;
+   task Act with Priority => 1;
    
    protected RadioDataPO is
       procedure Set(payload : nRF.Radio.Payload_Data);

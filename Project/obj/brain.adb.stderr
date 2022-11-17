@@ -1,2 +1,1 @@
-brain.adb:14:07: warning: variable "Dist" is never read and never assigned [-gnatwv]
-brain.adb:291:36: warning: "ServoStart2" may be referenced before it has a value [enabled by default]
+brain.adb:305:36: warning: "ServoStart2" may be referenced before it has a value [enabled by default]
