@@ -1,63 +1,28 @@
-with CarObject; use CarObject;
 with MotorController; use MotorController;
-with MicroBit.IOsForTasking; use MicroBit.IOsForTasking;
-with Ultrasonic; use Ultrasonic;
 with Ada.Real_Time; use Ada.Real_Time;
 with MicroBit.Servos; use MicroBit.Servos;
 with Ada.Execution_Time; use Ada.Execution_Time;
 with MicroBit.Console; use MicroBit.Console;
-with MicroBit.Servos; use MicroBit.Servos;
 with HAL; use HAL;
 with MicroBit.Radio;
 
-package body Brain5 is
+package body Brain is
 
    task body Sense is
       StartTime : Ada.Real_Time.Time;
       Period : Ada.Real_Time.Time_Span := Ada.Real_Time.Milliseconds(32);
       Dist : Distance_cm;
-      --measure
-      --Time_Now_Stopwatch : Time;
-      --Time_Now_CPU : CPU_Time;
-      --Elapsed_Stopwatch : Time_Span;
-      --Elapsed_CPU : Time_Span;
-      --AmountOfMeasurement: Integer := 40; -- do 10 measurement and average
    begin
       Ultrasonic.Setup(Pins.Ultrasonic1Trigger, Pins.Ultrasonic1Echo);
       StartTime := Ada.Real_Time.Clock;
-      -- measure
-      --Elapsed_Stopwatch := Time_Span_Zero;
-      --Elapsed_CPU := Time_Span_Zero;
-      
+    
       loop
          delay until StartTime;
          StartTime := StartTime + Period;
-         --Put_Line("Sense started");
-         --measure
-         --Elapsed_Stopwatch := Time_Span_Zero;
-         --Elapsed_CPU := Time_Span_Zero;
-         --for Index in 1..AmountOfMeasurement loop
-            --Time_Now_Stopwatch := Clock;
-            --Time_Now_CPU := Clock;
-            --end measure
-            Dist := Ultrasonic.Read;
-         ObstacleDistancePO.Set(Dist);
-         --Put_Line("Sense ended");
-            
-            --Elapsed_CPU := Elapsed_CPU + (Clock - Time_Now_CPU);
-            --Elapsed_Stopwatch := Elapsed_Stopwatch + (Clock - Time_Now_Stopwatch);
-         --end loop;
-         
-          
-         
-            --Elapsed_CPU := Elapsed_CPU / AmountOfMeasurement;
-            --Elapsed_Stopwatch := Elapsed_Stopwatch / AmountOfMeasurement;
 
-            --Put_Line ("Average CPU time: " & To_Duration (Elapsed_CPU)'Image & " seconds");
-            --Put_Line ("Average Stopwatch time: " & To_Duration (Elapsed_Stopwatch)'Image & " seconds");
-           
-         
-         
+         --Dist := Ultrasonic.Read;
+         ObstacleDistancePO.Set(Ultrasonic.Read);
+
       end loop;
    end Sense;
    
@@ -134,7 +99,7 @@ package body Brain5 is
       ServoStart1 : Time;
       ServoStart2 : Time;
       RerouteStart : Time;
-      RerouteTime : Time_Span := Milliseconds(2000);
+      RerouteTime : Time_Span := Milliseconds(1000);
       CarState : CarStates := Scan;
       ServoState : ServoStates := Forward;
       PrevServoState : ServoStates := Left45;
@@ -161,10 +126,8 @@ package body Brain5 is
       loop
          delay until StartTime;
          StartTime := StartTime + Period;
-         -- ObstacleDistancePO.Get(Dist);
          Dist := ObstacleDistancePO.Get;
          PayloadData := RadioDataPO.Get;
-         --Put_Line("Compute started");
          
          ------------------------
          ---- Radio control -----
@@ -534,8 +497,6 @@ package body Brain5 is
       loop
          delay until startTime;
          startTime := startTime + period;
-         --Put_Line("Act started");
-         -- ActuatorDataPO.Get(ActuatorValues);
          ActuatorValues := ActuatorDataPO.Get;
          SetDirectionRF(ActuatorValues.dirRF);
          SetDirectionLF(ActuatorValues.dirLF);
@@ -544,9 +505,8 @@ package body Brain5 is
          SetSpeedLeft(ActuatorValues.PwmLeft);
          SetSpeedRight(ActuatorValues.PwmRight);
          MicroBit.Servos.Go(Pins.PwmServo, ActuatorValues.ServoAngle);
-         MicroBit.IOsForTasking.Set(2, ActuatorValues.Led1);
-         MicroBit.IOsForTasking.Set(19, ActuatorValues.Led2);
-         --Put_Line("Act ended");
+         MicroBit.IOsForTasking.Set(Pins.Led1, ActuatorValues.Led1);
+         MicroBit.IOsForTasking.Set(Pins.Led2, ActuatorValues.Led2);
       end loop;
    end Act;
          
@@ -562,4 +522,4 @@ package body Brain5 is
                
 
 
-end Brain5;
+end Brain;

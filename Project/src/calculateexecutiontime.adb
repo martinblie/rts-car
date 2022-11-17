@@ -1,12 +1,9 @@
-with CarObject; use CarObject;
 with MotorController; use MotorController;
-with MicroBit.IOsForTasking; use MicroBit.IOsForTasking;
 with Ultrasonic; use Ultrasonic;
 with Ada.Real_Time; use Ada.Real_Time;
 with MicroBit.Servos; use MicroBit.Servos;
 with Ada.Execution_Time; use Ada.Execution_Time;
 with MicroBit.Console; use MicroBit.Console;
-with MicroBit.Servos; use MicroBit.Servos;
 with HAL; use HAL;
 with MicroBit.Radio;
 

@@ -1,6 +1,6 @@
 
 with MicroBit.Console;
-with Brain5;
+with Brain;
 
 procedure Main with Priority => 0 is
 begin

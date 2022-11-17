@@ -42,8 +42,8 @@ package ada_main is
    --  system.bb.parameters%s
    --  system.exceptions%s
    --  system.img_int%s
+   --  system.img_lli%s
    --  system.machine_code%s
-   --  machine_code%s
    --  system.parameters%s
    --  system.parameters%b
    --  system.storage_elements%s
@@ -173,10 +173,10 @@ package ada_main is
    --  ada.real_time.delays%b
    --  system.assertions%s
    --  system.assertions%b
+   --  system.bb.execution_time%s
+   --  system.bb.execution_time%b
    --  system.pool_global%s
    --  system.pool_global%b
-   --  system.relative_delays%s
-   --  system.relative_delays%b
    --  system.tasking.protected_objects%s
    --  system.tasking.protected_objects%b
    --  system.tasking.restricted%s
@@ -184,6 +184,8 @@ package ada_main is
    --  system.tasking.restricted.stages%b
    --  ada.task_identification%s
    --  ada.task_identification%b
+   --  ada.execution_time%s
+   --  ada.execution_time%b
    --  system.interrupts%s
    --  system.interrupts%b
    --  ada.interrupts%s
@@ -201,8 +203,10 @@ package ada_main is
    --  nrf_svd.ficr%s
    --  nrf_svd.gpio%s
    --  nrf_svd.gpiote%s
+   --  nrf_svd.nvmc%s
    --  nrf_svd.power%s
    --  nrf_svd.ppi%s
+   --  nrf_svd.pwm%s
    --  nrf_svd.qdec%s
    --  nrf_svd.radio%s
    --  nrf_svd.rng%s
@@ -213,6 +217,7 @@ package ada_main is
    --  nrf_svd.timer%s
    --  nrf_svd.twi%s
    --  nrf_svd.uart%s
+   --  nrf_svd.uicr%s
    --  nrf_svd.wdt%s
    --  hal.gpio%s
    --  hal.i2c%s
@@ -243,6 +248,8 @@ package ada_main is
    --  nrf.clock%b
    --  nrf.ppi%s
    --  nrf.ppi%b
+   --  nrf.radio%s
+   --  nrf.radio%b
    --  nrf.timers%s
    --  nrf.timers%b
    --  nrf.twi%s
@@ -256,10 +263,19 @@ package ada_main is
    --  microbit.console%b
    --  microbit.iosfortasking%s
    --  microbit.iosfortasking%b
-   --  microbit.timewithrtc1%s
-   --  microbit.timewithrtc1%b
-   --  carobject%s
-   --  carobject%b
+   --  microbit.radio%s
+   --  microbit.radio%b
+   --  microbit.servos%s
+   --  microbit.servos%b
+   --  microbit.timehighspeed%s
+   --  microbit.timehighspeed%b
+   --  ultrasonic%s
+   --  ultrasonic%b
+   --  utils%s
+   --  motorcontroller%s
+   --  motorcontroller%b
+   --  brain%s
+   --  brain%b
    --  main%b
    --  END ELABORATION ORDER
 

@@ -1,10 +1,10 @@
-with CarObject; use CarObject;
+with Utils; use Utils;
 with MicroBit.Servos; use MicroBit.Servos;
 with MicroBit.IOsForTasking; use MicroBit.IOsForTasking;
 with Ultrasonic; use Ultrasonic;
 with nRF.Radio;
 
-package Brain5 is
+package Brain is
    
    type CarStates is
      (Scan, Calculate, RerouteLeft, RerouteRight);
@@ -58,4 +58,4 @@ package Brain5 is
       ActuatorValues : ActuatorData;
    end ActuatorDataPO;
    
-end Brain5;
+end Brain;
