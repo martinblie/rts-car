@@ -1,1 +1,0 @@
-brain.adb:305:36: warning: "ServoStart2" may be referenced before it has a value [enabled by default]

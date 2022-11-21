@@ -32,7 +32,6 @@ package body Ultrasonic is
 
    procedure SendTriggerPulse is
    begin
-      --MicroBit.Console.Put_Line("start read func");
       GPIO_Periph.OUT_k.Arr (trigger_pin_device) := high;
       Delay_Us(10); -- Not 10 us, more about 11.4us (10 us+ required by ultrasonic spec)
                        --Higher delays become more accurate
@@ -53,11 +52,10 @@ package body Ultrasonic is
       end loop;
 
       --wait for echo to end
-      while GPIO_Periph.IN_k.Arr(echo_pin_device) = high and delayCounter <= 20 loop
+      while GPIO_Periph.IN_k.Arr(echo_pin_device) = high and delayCounter <= 40 loop
          Delay_Us(58);  --wait for 58 us or 1 cm distance and check again
          delayCounter := delayCounter + 1;
       end loop;
-      --GPIO_Periph.OUT_k.Arr (echo_pin_device) := low;
 
       return delayCounter * 58; --high time in us
    end WaitForEcho;
@@ -68,14 +66,13 @@ package body Ultrasonic is
       -- Distance formula see: https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf
       temp_result := echo_time_us/ 58;
 
-      if temp_result > 20 then
-         temp_result := 20;
+      if temp_result > 40 then
+         temp_result := 40;
       end if;
 
       if temp_result < 2 then
          temp_result := 0;
       end if;
-      --MicroBit.Console.Put_Line("read func: " & temp_result'Image);
 
       return Distance_cm(temp_result);
    end ConvertEchoToDistance;

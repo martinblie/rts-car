@@ -203,6 +203,7 @@ package ada_main is
    --  nrf_svd.ficr%s
    --  nrf_svd.gpio%s
    --  nrf_svd.gpiote%s
+   --  nrf_svd.nvmc%s
    --  nrf_svd.power%s
    --  nrf_svd.ppi%s
    --  nrf_svd.pwm%s
@@ -216,6 +217,7 @@ package ada_main is
    --  nrf_svd.timer%s
    --  nrf_svd.twi%s
    --  nrf_svd.uart%s
+   --  nrf_svd.uicr%s
    --  nrf_svd.wdt%s
    --  hal.gpio%s
    --  hal.i2c%s
@@ -240,6 +242,8 @@ package ada_main is
    --  nrf.spi_master%b
    --  nrf.tasks%s
    --  nrf.tasks%b
+   --  nrf.adc%s
+   --  nrf.adc%b
    --  nrf.clock%s
    --  nrf.clock%b
    --  nrf.ppi%s
@@ -257,16 +261,14 @@ package ada_main is
    --  microbit%s
    --  microbit.console%s
    --  microbit.console%b
-   --  microbit.radio%s
-   --  microbit.radio%b
-   --  microbit.timehighspeed%s
-   --  microbit.timehighspeed%b
-   --  nrf.adc%s
-   --  nrf.adc%b
    --  microbit.iosfortasking%s
    --  microbit.iosfortasking%b
+   --  microbit.radio%s
+   --  microbit.radio%b
    --  microbit.servos%s
    --  microbit.servos%b
+   --  microbit.timehighspeed%s
+   --  microbit.timehighspeed%b
    --  ultrasonic%s
    --  ultrasonic%b
    --  utils%s

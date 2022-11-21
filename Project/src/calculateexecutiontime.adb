@@ -5,6 +5,7 @@ with MicroBit.Servos; use MicroBit.Servos;
 with Ada.Execution_Time; use Ada.Execution_Time;
 with MicroBit.Console; use MicroBit.Console;
 with HAL; use HAL;
+with MicroBit.IOsForTasking;
 with MicroBit.Radio;
 
 -- SENSE                                 T = 20
@@ -35,10 +36,11 @@ package body CalculateExecutionTime is
 
    task body CalculateExecution is
     StartTime : Ada.Real_Time.Time;
-      Period : Ada.Real_Time.Time_Span := Ada.Real_Time.Milliseconds(20);
+      Period : Ada.Real_Time.Time_Span := Ada.Real_Time.Milliseconds(300);
       -- put task variables here
 
       Dist : Distance_cm;
+      tog : Boolean := True;
       --measurement variables
       Time_Now_Stopwatch : Time;
       Time_Now_CPU : CPU_Time;
@@ -65,35 +67,37 @@ package body CalculateExecutionTime is
             Time_Now_Stopwatch := Clock;
             Time_Now_CPU := Clock;
             -- put task looping code here
-            Dist := Ultrasonic.Read;
-            ObstacleDistancePO.Set(Dist);
+            --Dist := Ultrasonic.Read;
+            ObstacleDistancePO.Set(Ultrasonic.Read);
             
             -- measurement looping code
-            Elapsed_CPU := Elapsed_CPU + (Clock - Time_Now_CPU);
-            Elapsed_Stopwatch := Elapsed_Stopwatch + (Clock - Time_Now_Stopwatch);
+            Elapsed_CPU := (Clock - Time_Now_CPU);
+            Elapsed_Stopwatch := (Clock - Time_Now_Stopwatch);
             
-            
-         end loop;
-         
-         
-         
-         Elapsed_CPU := Elapsed_CPU / AmountOfMeasurement;
-         Elapsed_Stopwatch := Elapsed_Stopwatch / AmountOfMeasurement;
-         if Elapsed_CPU > Worst_Elapsed_CPU then
+            if Elapsed_CPU > Worst_Elapsed_CPU then
             Worst_Elapsed_CPU := Elapsed_CPU;
          end if;
          
          if Elapsed_Stopwatch > Worst_Elapsed_Stopwatch then
             Worst_Elapsed_Stopwatch := Elapsed_Stopwatch;
-         end if;
+            end if;
+        
+            --MicroBit.IOsForTasking.Set(12, tog);
+            --tog := not tog;
+              
+            
+         end loop;
+         
+         
+         
+
          
 
          --Put_Line ("Average CPU time: " & To_Duration (Elapsed_CPU)'Image & " seconds");
          --Put_Line ("Average Stopwatch time: " & To_Duration (Elapsed_Stopwatch)'Image & " seconds");
-         --Put_Line ("Worst CPU time: " & To_Duration (Worst_Elapsed_CPU)'Image & " seconds");
+         Put_Line ("Worst CPU time: " & To_Duration (Worst_Elapsed_CPU)'Image & " seconds");
          --Put_Line ("Worst Stopwatch time: " & To_Duration (Worst_Elapsed_Stopwatch)'Image & " seconds");
          --Put_Line("x: " & RadioDataPO.Get(1)'Img);
-         Put_Line("Dist: " & Dist'Image);
            
          
          

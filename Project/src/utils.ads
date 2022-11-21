@@ -19,8 +19,8 @@ package Utils is
       Dir2LF             : Pin_Id       := 14; -- orange
       Dir1RF             : Pin_Id       := 6; -- brown
       Dir2RF             : Pin_Id       := 7; -- red
-      Ultrasonic1Trigger : Pin_Id       := 9; -- orange
-      Ultrasonic1Echo    : Pin_Id       := 8; --yellow
+      Ultrasonic1Trigger : Pin_Id       := 8; -- orange
+      Ultrasonic1Echo    : Pin_Id       := 9; --yellow
       Led1               : Pin_Id       := 2;
       Led2               : Pin_Id       := 19;
    end record;

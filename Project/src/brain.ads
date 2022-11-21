@@ -45,7 +45,7 @@ package Brain is
       procedure Set(Dist : Distance_cm);
       function Get return Distance_cm;
    private
-      CurrentObstacleDistance : Distance_cm := 120;
+      CurrentObstacleDistance : Distance_cm := 20;
    end ObstacleDistancePO;
    
    

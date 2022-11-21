@@ -1,0 +1,1 @@
+calculateexecutiontime.adb:42:07: warning: variable "Dist" is never read and never assigned [-gnatwv]
